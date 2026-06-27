@@ -45,11 +45,26 @@ const
     faActionPage6];
 
   ActionGroupForms: TActionGroup = [
+    faRotaForm1,
+    faRotaForm2,
+    faRotaForm3,
     faShowImage,
     faShowMemo,
     faShowActions,
+    faShowOptions,
+    faShowDrawings,
+    faShowConfig,
+    faShowKreis,
     faShowColor,
     faShowBambu,
+    faShowSplash,
+    faShowForce,
+    faShowTabelle,
+    faShowDetail,
+    faShowSaling,
+    faShowController,
+    faShowText,
+    faShowTrimmTab,
     faShowAnim,
     faEditText,
     faEditConn,
@@ -57,16 +72,20 @@ const
     faEditPort,
     faEditPref,
     faEditStep,
+    faShowData,
     faShowRepo,
+    faShowShad,
+    faShowChart,
+    faShowDiagA,
+    faShowDiagC,
+    faShowDiagE,
+    faShowDiagQ,
     faShowInfo];
 
   ActionGroupTouchLayout: TActionGroup = [
     faTouchTablet,
     faTouchPhone,
     faTouchDesk];
-
-  ActionGroupActionMapping: TActionGroup = [
-    faProcessAll];
 
   ActionGroupScene: TActionGroup = [
     faScene1,
@@ -89,7 +108,10 @@ const
     faPlot10,
     faPlot11,
     faPlot12,
-    faPlot13];
+    faPlot13,
+    faPlot14,
+    faPlot15,
+    faPlot16];
 
   ActionGroupFigure: TActionGroup = [
     faFigure1,
@@ -174,6 +196,13 @@ const
     faParamL4Y,
     faParamL4Z];
 
+  ActionGroupComboCycle: TActionGroup = [
+    faCycleComboM,
+    faCycleComboP,
+    faCycleComboValueM,
+    faCycleComboValueP,
+    faCycleComboValue];
+
   ActionGroupParamCycle: TActionGroup = [
     faCycleX,
     faCycleY,
@@ -184,6 +213,11 @@ const
     faCycleR,
     faCycleT,
     faCycleU];
+
+  ActionGroupFlagCycle: TActionGroup = [
+    faCycleFlagM,
+    faCycleFlagP,
+    faToggleFlag];
 
   ActionGroupModelParams: TActionGroup = [
     faParamR,
@@ -199,6 +233,13 @@ const
     faParamY3F,
     faParamL3F,
     faParamLF];
+
+  ActionGroupConeSections: TActionGroup = [
+    faParamMZ,
+    faParamKW,
+    faConeModeOn,
+    faConeModeOff,
+    faToggleConeMode];
 
   ActionGroupModelOptions: TActionGroup = [
     faToggleSolutionMode,
@@ -252,6 +293,7 @@ const
     faBlindRingM,
     faCycleRingP,
     faCycleRingM,
+    faToggleShirtMode,
     faToggleShirtColor,
     faShirtColorOn,
     faShirtColorOff,
@@ -298,9 +340,36 @@ const
     faBandSelection20,
     faBandSelection21];
 
+  ActionGroupMesh: TActionGroup = [
+    faFederMesh,
+    faLauranaMesh,
+    faToggleLaurana];
+
+  ActionGroupMeshForm: TActionGroup = [
+    faPlotMesh,
+    faFlatMesh,
+    faDiaMesh,
+    faKegelMesh,
+    faKugelMesh,
+    faEggMesh,
+    faEliMesh,
+    faSoapMesh,
+    faBackPlaneOn,
+    faBackPlaneOff,
+    faToggleBackPlane,
+    faParamEggX,
+    faParamEggZ];
+
   ActionGroupMeshMode: TActionGroup = [
+    faEvenMesh,
+    faFilterMesh,
+    faFuzzyMesh,
     faOpenMesh,
     faPolarMesh,
+    faLinearMesh,
+    faToggleSliceInversion,
+    faToggleSliceTopOnly,
+    faToggleSliceBottomOnly,
     faReducedMesh,
     faReduceMode0,
     faReduceMode1,
@@ -319,27 +388,57 @@ const
     faMeshSize512,
     faMeshSize1024];
 
+  ActionGroupMeshQuarter: TActionGroup = [
+    faUseQuarter0,
+    faUseQuarter1,
+    faUseQuarter2,
+    faUseQuarter3,
+    faUseQuarter4];
+
+  ActionGroupMeshResolution: TActionGroup = [
+    faResolution1,
+    faResolution2,
+    faResolution3,
+    faResolution4,
+    faResolution5,
+    faResolution6];
+
   ActionGroupMeshExport: TActionGroup = [
+    faToggleBaseCapExport,
+    faToggleSideCapExport,
+    faPrepareForMeshExport,
+    faPrepareForSliceExport,
+    faReturnFromExport,
+    faExportAllSlices,
+    faSliceExport01,
+    faSliceExport02,
+    faCopyPOV,
+    faCopyOBJ,
+    faSliceSet00,
+    faSliceSet01,
+    faSliceSet02,
+    faSliceSet03,
+    faSliceSet04,
+    faTogglePartCaps,
+    faExportPart,
+    faExportAllParts,
+    faExportVase,
+    faExportSolid,
+    faExportRing,
+    faExportRingGroup,
     faWantBottom,
     faWantBottomMirrored,
     faWantSideCaps,
+    faWantAutoStitch,
     faTestSingleSide,
     faTakeCapValueSnapshot];
 
-  ActionGroupMeshExportCoords: TActionGroup = [
-    faExportCoordsNative,
-    faExportCoordsBlender,
-    faExportCoords3DV,
-    faExportCoords3DP];
-
-  ActionGroupMeshOptions: TActionGroup = [
-    faTextureJitt,
-    faTextureJack];
-
   ActionGroupExporterOBJ: TActionGroup = [
+    faUseExporterOBJ,
     faWantAutoFolder,
     faExportMtl,
     faExportObj,
+    faExportTxt,
     faWantMaterial,
     faWantSimpleName,
     faWantAngularDir,
@@ -348,7 +447,32 @@ const
     faObjDigits2,
     faObjDigits3,
     faObjDigits4,
-    faObjDigits5];
+    faObjDigits5,
+    faAllParts,
+    faTopOnly,
+    faBottomOnly,
+    faNorthOnly,
+    faSouthOnly];
+
+  ActionGroupMeshExportCoords: TActionGroup = [
+    faExportCoordsNative,
+    faExportCoordsBlender,
+    faExportCoords3DV,
+    faExportCoords3DP];
+
+  ActionGroupPathExport: TActionGroup = [
+    faExportPath,
+    faExportPathCollection,
+    faExportPathSVG,
+    faExportPathOBJ,
+    faExportPathDXF,
+    faExportSvg,
+    faExportDxf,
+    faExportGrf];
+
+  ActionGroupCycleMesh: TActionGroup = [
+    faCycleMeshM,
+    faCycleMeshP];
 
   ActionGroupMeshFigures: TActionGroup = [
     faToggleMarker,
@@ -362,21 +486,177 @@ const
     faToggleCorner,
     faToggleLimitPlane];
 
+  ActionGroupMeshOptions: TActionGroup = [
+    faTextureMidd,
+    faTextureVert,
+    faTextureJitt,
+    faTextureJack,
+    faInvertedMesh,
+    faInvertedMeshOn,
+    faInvertedMeshOff,
+    faUprightMesh,
+    faUprightMeshOn,
+    faUprightMeshOff,
+    faFlippedTexture,
+    faFlippedTextureOn,
+    faFlippedTextureOff];
+
   ActionGroupVertexPulling: TActionGroup = [
+    faToggleShortQuads,
+    faToggleMoreDetail,
+    faToggleDetailPulling,
     faToggleZeroPulling,
     faToggleLimitPulling,
     faToggleSlicePulling,
+    faToggleSlicePullingTop,
+    faToggleSlicePullingBottom,
     faToggleTargetPulling,
     faToggleRightPulling,
     faToggleCrackFixing];
 
+  ActionGroupMeshBuilderObjects: TActionGroup = [
+    faHideAll,
+    faToggleStrokeCube,
+    faToggleFaceModel,
+    faToggleFederMesh,
+    faToggleCornerCube,
+    faToggleCornerPlane,
+    faTogglePlaneMesh,
+    faToggleDiskMesh,
+    faToggleKugelMesh,
+    faToggleFederBand,
+    faToggleFederShape,
+    faToggleFederShell1,
+    faToggleFederShell2,
+    faToggleFederSlice,
+    faToggleFederSlice2,
+    faToggleFederHand,
+    faToggleFederGraph,
+    faToggleFederRoof,
+    faToggleFederRing,
+    faToggleFederRingGroup,
+    faToggleShapes,
+    faToggleRings];
+
+  ActionGroupMeshBuilderParts: TActionGroup = [
+    faToggleFederLeftStone,
+    faToggleFederRightStone,
+    faToggleSlicePart,
+    faToggleRingPart,
+    faToggleBandPart,
+    faToggleRingBandPart,
+    faToggleRingGroupPart,
+    faToggleSliceBandPart,
+    faToggleSolidPart,
+    faToggleSolidHand,
+    faToggleShellPart,
+    faToggleVasePart];
+
+  ActionGroupMeshBuilderGroups: TActionGroup = [
+    faToggleRingGroups,
+    faToggleSliceGroups];
+
   ActionGroupMeshBuilderOptions: TActionGroup = [
+    faToggleTestBorder,
+    faToggleBorderDrawing,
+    faToggleLeftHand,
+    faToggleFlippedHand,
+    faToggleReduceHands,
+    faToggleGap,
     faToggleSolidFlip,
+    faToggleWantPolyTrim,
+    faToggleTextureJack,
+    faToggleOpenMesh,
+    faToggleMeshPosition,
+    faSubdivisionHP,
+    faSubdivisionHM,
+    faSubdivisionAP,
+    faSubdivisionAM,
+    faWantPositionZ,
+    faWantSubdividedRing,
     faWantSpecialY,
     faToggleShowEdges,
     faUniqueMode1,
     faUniqueMode2,
+    faUniqueMode3,
+    faUniqueMode4,
     faToggleUniqueVertices];
+
+  ActionGroupMeshBuilderMaterials: TActionGroup = [
+    faToggleOriginalMaterial,
+    faToggleSelectedMaterial,
+    faToggleAmbientMaterial,
+    faToggleColorMaterial,
+    faToggleSimpleMaterial,
+    faToggleFederMaterial,
+    faToggleLightMaterial,
+    faToggleLightParent,
+    faFixHands];
+
+  ActionGroupHeightLine: TActionGroup = [
+    faWantPolyTrim,
+    faShowPolyPoints,
+    faShowRodPoly,
+    faShowTwo,
+    faShowTri];
+
+  ActionGroupMeshLine: TActionGroup = [
+    faToggleKeepRuns,
+    faToggleGridTest,
+    faTogglePlotArea,
+    faToggleExpoTest,
+    faToggleSecoTest,
+    faToggleLoopTest,
+    faToggleScanHorz,
+    faToggleScanVert,
+    faToggleScanBoth,
+    faToggleAutoCalc,
+    faToggleWantLoop];
+
+  ActionGroupMeshLineOptions: TActionGroup = [
+    faToggleLF0,
+    faToggleLF1,
+    faToggleLF2,
+    faToggleLF3,
+    faToggleLF4,
+    faToggleLF5,
+    faToggleLF6,
+    faToggleLF7,
+    faToggleLF8,
+    faToggleLF9,
+    faToggleLFA,
+    faToggleLFB,
+    faToggleLFC,
+    faToggleLFD,
+    faToggleLFE,
+    faToggleLFF,
+    faToggleMeshLine,
+    faShowSingleExpo,
+    faShowSingleSeco,
+    faShowFirstCompletion,
+    faShowSecondCompletion];
+
+  ActionGroupMeshLineParams: TActionGroup = [
+    faParamStepCount,
+    faParamStepWidthFactor,
+    faParamLoopSectionFactor,
+    faParamIndexOfFirst,
+    faParamIndexOfSecond,
+    faParamShortPolyMinLength,
+    faParamLoopDataX,
+    faParamLoopDataY];
+
+  ActionGroupSortOrder: TActionGroup = [
+    faToggleSortOrder,
+    faCycleSortOrderP,
+    faCycleSortOrderM,
+    faSortOrder0,
+    faSortOrder1,
+    faSortOrder2];
+
+  ActionGroupDepthMap: TActionGroup = [
+    faInitDepthMap,
+    faCopyDepthMap];
 
   ActionGroupPin: TActionGroup = [
     faTogglePin,
@@ -397,9 +677,11 @@ const
 
   ActionGroupTextureExport: TActionGroup = [
     faCopyBinCode,
-    faCopyBinCodeTest];
+    faCopyBinCodeTest,
+    faCopyTextureBitmapText];
 
   ActionGroupTextureImport: TActionGroup = [
+    faSelectTextureBitmap,
     faTextureClear];
 
   ActionGroupColorMix: TActionGroup = [
@@ -413,7 +695,118 @@ const
     faColorMixM];
 
   ActionGroupColorSwat: TActionGroup = [
-    faToggleColorSwat];
+    faToggleColorSwat,
+    faColorSwatOn,
+    faColorSwatOff];
+
+  ActionGroupShaderSelection: TActionGroup = [
+    faShaderC,
+    faShaderT,
+    faShader1,
+    faShader2,
+    faShader3,
+    faShader4,
+    faShader5];
+
+  ActionGroupShaderNormalMode: TActionGroup = [
+    faNormalMode0,
+    faNormalMode1,
+    faNormalMode2,
+    faNormalMode3,
+    faNormalMode4,
+    faNormalMode5,
+    faNormalMode6];
+
+  ActionGroupShaderMappedLight: TActionGroup = [
+    faMappedLight0,
+    faMappedLight1,
+    faMappedLight2,
+    faMappedLight3,
+    faMappedLight4];
+
+  ActionGroupShaderParams1: TActionGroup = [
+    faParamMatEmis,
+    faParamMatAmbi,
+    faParamMatDiff,
+    faParamMatSpec,
+    faParamMatShin,
+    faParamLitCutt,
+    faParamLitExpo,
+    faParamLitDiff,
+    faParamLitSpec,
+    faParamLitColR,
+    faParamLitColG,
+    faParamLitColB,
+    faParamLitPosX,
+    faParamLitPosY,
+    faParamLitPosZ,
+    faParamLitDirX,
+    faParamLitDirY,
+    faParamLitDirZ,
+    faParamLitAttX,
+    faParamLitAttY,
+    faParamLitAttZ];
+
+  ActionGroupShaderParams2: TActionGroup = [
+    faParamFresnelR0,
+    faParamSpotPower,
+    faParamRoughness,
+    faParamFalloffStart,
+    faParamFalloffEnd];
+
+  ActionGroupShaderParams3: TActionGroup = [
+    faParamEmisLight,
+    faParamAmbiLight,
+    faParamDiffLight,
+    faParamSpecLight];
+
+  ActionGroupShaderParams4: TActionGroup = [
+    faParamLightStrength,
+    faParamSpecPower,
+    faParamOpacity];
+
+  ActionGroupShaderMode: TActionGroup = [
+    faShaderMode0,
+    faShaderMode1,
+    faShaderMode2,
+    faShaderMode3];
+
+  ActionGroupShaderMedium: TActionGroup = [
+    faMediumWater,
+    faMediumGlass,
+    faMediumPlastic,
+    faMediumGold,
+    faMediumSilver,
+    faMediumCopper];
+
+  ActionGroupShaderOutOptions: TActionGroup = [
+    faOutOriginal,
+    faOutPos,
+    faOutNor,
+    faOutTex,
+    faOutN,
+    faOutL,
+    faOutV,
+    faOutH,
+    faOutNdotL,
+    faOutNdotH,
+    faOutDiffuse,
+    faOutSpecular,
+    faOutEmissive];
+
+  ActionGroupShaderContent: TActionGroup = [
+    faWantHand,
+    faContentUseRes,
+    faContentLevelS,
+    faContentLevelM,
+    faContentLevelL];
+
+  ActionGroupShaderExport: TActionGroup = [
+    faExportShaderAll,
+    faExportShaderRC,
+    faExportShaderBin,
+    faExportShaderDX,
+    faExportShaderGL];
 
   ActionGroupLux: TActionGroup = [
     faLux1On,
@@ -448,6 +841,15 @@ const
     faResetLightPosition,
     faResetLightParams];
 
+  ActionGroupLightType: TActionGroup = [
+    faDirectionalLight,
+    faPositionalLight,
+    faSpotLight,
+    faSimpleLight];
+
+  ActionGroupSceneLight: TActionGroup = [
+    faWantBackLight];
+
   ActionGroupWheel: TActionGroup = [
     faParamValuePlus1,
     faParamValueMinus1,
@@ -469,6 +871,15 @@ const
   ActionGroupColorScheme: TActionGroup = [
     faCycleColorSchemeM,
     faCycleColorSchemeP];
+
+  ActionGroupColorSchemeFC: TActionGroup = [
+    faCycleColorScheme2DP,
+    faCycleColorScheme2DM,
+    faCycleJokerColorM,
+    faCycleJokerColorP,
+    faBlackText,
+    faGrayText,
+    faWhiteText];
 
   ActionGroupAnimatedRotations: TActionGroup = [
     faRotX,
@@ -505,9 +916,11 @@ const
     faToggleColorPanel,
     faColorPanelOn,
     faColorPanelOff,
+    faShowAppBar,
     faShowEditField,
     faFocusEditField,
     faInitSpecial,
+    faNewGame,
     faPaletteOn,
     faPaletteOff];
 
@@ -571,6 +984,9 @@ const
   ActionGroupViewFlags: TActionGroup = [
     faToggleBMap,
     faToggleZoom,
+    faToggleMapK,
+    faMapKOn,
+    faMapKOff,
     faToggleTouchMenu,
     faToggleEquationText,
     faTogglePrimeText,
@@ -591,7 +1007,13 @@ const
     faResetFrustum,
     faEulerSync];
 
+  ActionGroupGridFlavour: TActionGroup = [
+    faGridFlavourEmb,
+    faGridFlavourTxt,
+    faGridFlavourTee];
+
   ActionGroupReport: TActionGroup = [
+    faCopyHtml,
     faCopyMeshDataReport,
     faCopyShortCutReport,
     faWriteActionReport,
@@ -618,16 +1040,23 @@ const
 
   ActionGroupCopyImage: TActionGroup = [
     faCopyScreenshot,
+    faCopyBitmap,
+    faCopyBitmap2D,
     faCopyBitmap3D,
     faCopyTextureBitmap,
     faCopyImprintedBitmap,
     faCopyImprintedBitmapTest,
+    faCreateExtenderThumbs,
     faCopyTiledImage0,
     faCopyTiledImage1,
     faCopyTiledImage2,
     faCopyTiledImage3,
+    faCreateThumbs,
     faCreateImage3D,
-    faCreateImageSeries3D];
+    faCreateImageSeries3D,
+    faCreateImage2D,
+    faCreateImageSeries2D,
+    faCreateSeries2D];
 
   ActionGroupCopyOptions: TActionGroup = [
     faToggleHardCopy,
@@ -696,11 +1125,15 @@ const
     faToggleProbe];
 
   ActionGroupBahn: TActionGroup = [
+    faBahnAngle0,
+    faBahnAngle30,
+    faBahnAngle90,
     faNorthCap,
     faSouthCap,
     faEastCap,
     faWestCap,
     faParamCapValue,
+    faParamSliceHeight,
     faParamBahnRadius,
     faParamBahnPositionX,
     faParamBahnPositionY,
@@ -713,6 +1146,33 @@ const
     faBitmapDraw,
     faMeshDraw,
     faPolygonDraw];
+
+  ActionGroupModelSync: TActionGroup = [
+    faToggleModel,
+    faToggleModelSync,
+    faModelSyncOn,
+    faModelSyncOff,
+    faToggleViewSync,
+    faViewSyncOn,
+    faViewSyncOff];
+
+  ActionGroupPolyMode: TActionGroup = [
+    faPolyColorI,
+    faPolyColorZ,
+    faPolySet0,
+    faPolySet1,
+    faPolySet2,
+    faPolySet3,
+    faPolySet4,
+    faPolySet5,
+    faPolySet6,
+    faPolyModeA,
+    faPolyMode1,
+    faPolyMode2,
+    faPolyMode3,
+    faPolyMode4,
+    faPolyMode5,
+    faPolyMode6];
 
   ActionGroupAnimationStore: TActionGroup = [
     faRecall1,
@@ -743,17 +1203,6 @@ const
     faAutoSendOn,
     faAutoSendOff];
 
-  ActionGroupExampleData: TActionGroup = [
-    faExample01,
-    faExample02,
-    faExample03,
-    faExample04,
-    faExample05,
-    faExample06,
-    faExample07,
-    faExample08,
-    faExample09];
-
   ActionGroupDB: TActionGroup = [
     faCreateDB,
     faExportDB,
@@ -778,7 +1227,38 @@ const
     faGotoSample0,
     faGotoSample1];
 
+  ActionGroupExampleData: TActionGroup = [
+    faExample01,
+    faExample02,
+    faExample03,
+    faExample04,
+    faExample05,
+    faExample06,
+    faExample07,
+    faExample08,
+    faExample09];
+
+  ActionGroupEquilateralSample: TActionGroup = [
+    faTogglePlot,
+    faSetPlotE,
+    faSetPlotF,
+    faLockPlotE,
+    faLockPlotF,
+    faGotoEquilateralSampleA0,
+    faGotoEquilateralSampleB1,
+    faGotoEquilateralSampleC2,
+    faGotoEquilateralSampleD3,
+    faGotoEquilateralSampleE4,
+    faGotoEquilateralSampleF5,
+    faGotoEquilateralSampleG6,
+    faGotoEquilateralSampleH7,
+    faGotoEquilateralSampleI8,
+    faGotoEquilateralSampleJ9];
+
   ActionGroupDisplay: TActionGroup = [
+    faToggleFlipState,
+    faDisplayFlip2D,
+    faDisplayFlop3D,
     faCycleDisplayM,
     faCycleDisplayP,
     faDisplay00,
@@ -790,6 +1270,18 @@ const
     faDisplay66,
     faUpdateContent];
 
+  ActionGroupDelay: TActionGroup = [
+    faDelay0,
+    faDelay1,
+    faDelay2,
+    faDelay3];
+
+  ActionGroupIdle: TActionGroup = [
+    faIdle0,
+    faIdle1,
+    faIdle2,
+    faIdle3];
+
   ActionGroupCreationTest: TActionGroup = [
     faSwapDown,
     faSwapUp,
@@ -797,7 +1289,11 @@ const
 
   ActionGroupDebugOptions: TActionGroup = [
     faTestBtnClick,
-    faRunBinPixelTest];
+    faDoSingleStep,
+    faReportLiveObjects,
+    faRunBinPixelTest,
+    faRunInitDataAgain,
+    faFindBorder];
 
   ActionGroupEmptyLastLine: TActionGroup = [
     faELLOn,
@@ -812,6 +1308,234 @@ const
     faHelpCycle,
     faHelpList,
     faHelpHome];
+
+  ActionGroupFigureSize: TActionGroup = [
+    faFigureSizeXS,
+    faFigureSizeS,
+    faFigureSizeM,
+    faFigureSizeL,
+    faFigureSizeXL];
+
+  ActionGroupEyeSize: TActionGroup = [
+    faEyeSizeS,
+    faEyeSizeM,
+    faEyeSizeL];
+
+  ActionGroupLayerSelection: TActionGroup = [
+    faSelectLayer1,
+    faSelectLayer2,
+    faSelectLayer3,
+    faSelectLayer4,
+    faSelectLayer5,
+    faSelectLayer6,
+    faSelectLayer7];
+
+  ActionGroupColorSelection: TActionGroup = [
+    faSelectColor1,
+    faSelectColor2,
+    faSelectColor3,
+    faSelectColor4];
+
+  ActionGroupColorMapping: TActionGroup = [
+    faCLA,
+    faMapColorToLayer,
+    faSelectColorMapping1,
+    faSelectColorMapping2,
+    faSelectColorMapping3,
+    faSelectColorMapping4,
+    faSelectColorMapping5,
+    faSelectColorMapping6];
+
+  ActionGroupActionMapping: TActionGroup = [
+    faProcessAll];
+
+  ActionGroupRggControls: TActionGroup = [
+    faController,
+    faWinkel,
+    faVorstag,
+    faWante,
+    faWoben,
+    faSalingH,
+    faSalingA,
+    faSalingL,
+    faSalingW,
+    faMastfallF0C,
+    faMastfallF0F,
+    faMastfallVorlauf,
+    faBiegung,
+    faMastfussD0X,
+    faVorstagOS,
+    faWPowerOS,
+    faParamAPW,
+    faParamEAH,
+    faParamEAR,
+    faParamEI];
+
+  ActionGroupRggFixPoints: TActionGroup = [
+    faFixpointA0,
+    faFixpointA,
+    faFixpointB0,
+    faFixpointB,
+    faFixpointC0,
+    faFixpointC,
+    faFixpointD0,
+    faFixpointD,
+    faFixpointE0,
+    faFixpointE,
+    faFixpointF0,
+    faFixpointF];
+
+  ActionGroupRggViewPoint: TActionGroup = [
+    faViewpointS,
+    faViewpointA,
+    faViewpointT,
+    faViewpoint3];
+
+  ActionGroupRggSalingType: TActionGroup = [
+    faSalingTypOhne,
+    faSalingTypDrehbar,
+    faSalingTypFest,
+    faSalingTypOhneStarr];
+
+  ActionGroupRggCalcType: TActionGroup = [
+    faCalcTypQuer,
+    faCalcTypKnick,
+    faCalcTypGemessen];
+
+  ActionGroupRggAppMode: TActionGroup = [
+    faDemo,
+    faMemoryBtn,
+    faMemoryRecallBtn,
+    faKorrigiertItem,
+    faSofortBtn,
+    faGrauBtn,
+    faBlauBtn,
+    faMultiBtn];
+
+  ActionGroupRggSuper: TActionGroup = [
+    faSuperSimple,
+    faSuperNormal,
+    faSuperGrau,
+    faSuperBlau,
+    faSuperMulti,
+    faSuperDisplay,
+    faSuperQuick];
+
+  ActionGroupRggReport: TActionGroup = [
+    faReportNone,
+    faReportLog,
+    faReportJson,
+    faReportData,
+    faReportShort,
+    faReportLong,
+    faReportTrimmText,
+    faReportJsonText,
+    faReportDataText,
+    faReportDiffText,
+    faReportAusgabeDetail,
+    faReportAusgabeRL,
+    faReportAusgabeRP,
+    faReportAusgabeRLE,
+    faReportAusgabeRPE,
+    faReportAusgabeDiffL,
+    faReportAusgabeDiffP,
+    faReportXML,
+    faReportDebugReport,
+    faReportReadme];
+
+  ActionGroupRggChart: TActionGroup = [
+    faChartRect,
+    faChartTextRect,
+    faChartLegend,
+    faChartAP,
+    faChartBP,
+    faChartGroup,
+    faParamCountPlus,
+    faParamCountMinus,
+    faPComboPlus,
+    faPComboMinus,
+    faXComboPlus,
+    faXComboMinus,
+    faYComboPlus,
+    faYComboMinus,
+    faChartReset];
+
+  ActionGroupRggGraph: TActionGroup = [
+    faToggleLineColor,
+    faToggleUseDisplayList,
+    faToggleUseQuickSort,
+    faToggleShowLegend,
+    faToggleSortedRota,
+    faRggBogen,
+    faRggKoppel,
+    faRggHull,
+    faRggZoomIn,
+    faRggZoomOut,
+    faToggleSalingGraph,
+    faToggleControllerGraph,
+    faToggleChartGraph,
+    faToggleKraftGraph,
+    faToggleMatrixText];
+
+  ActionGroupRggSegment: TActionGroup = [
+    faToggleSegmentF,
+    faToggleSegmentR,
+    faToggleSegmentS,
+    faToggleSegmentM,
+    faToggleSegmentV,
+    faToggleSegmentW,
+    faToggleSegmentC,
+    faToggleSegmentA];
+
+  ActionGroupRggRenderOptions: TActionGroup = [
+    faWantRenderH,
+    faWantRenderP,
+    faWantRenderF,
+    faWantRenderE,
+    faWantRenderS];
+
+  ActionGroupRggTrimms: TActionGroup = [
+    faTrimm0,
+    faTrimm1,
+    faTrimm2,
+    faTrimm3,
+    faTrimm4,
+    faTrimm5,
+    faTrimm6,
+    fa420,
+    faLogo];
+
+  ActionGroupRggTrimmFile: TActionGroup = [
+    faCopyTrimmItem,
+    faPasteTrimmItem,
+    faCopyAndPaste,
+    faUpdateTrimm0,
+    faReadTrimmFile,
+    faSaveTrimmFile,
+    faCopyTrimmFile];
+
+  ActionGroupRggTrimmText: TActionGroup = [
+    faToggleTrimmText,
+    faToggleDiffText,
+    faToggleDataText,
+    faToggleDebugText,
+    faUpdateReportText];
+
+  ActionGroupRggSonstiges: TActionGroup = [
+    faToggleDarkMode,
+    faToggleButtonSize,
+    faToggleSandboxed,
+    faToggleSpeedPanel,
+    faToggleAllProps,
+    faToggleAllTags];
+
+  ActionGroupRggInfo: TActionGroup = [
+    faShowHelpText,
+    faShowInfoText,
+    faShowNormalKeyInfo,
+    faShowSpecialKeyInfo,
+    faShowDebugInfo,
+    faShowZOrderInfo];
 
   ActionGroupBtnLegendTablet: TActionGroup = [
     faTL01,
@@ -859,6 +1583,39 @@ const
     faTouchBarLeft,
     faTouchBarRight];
 
+  ActionGroupCircles: TActionGroup = [
+    faCirclesSelectC0,
+    faCirclesSelectC1,
+    faCirclesSelectC2,
+    faCircleParamR1,
+    faCircleParamR2,
+    faCircleParamM1X,
+    faCircleParamM1Y,
+    faCircleParamM2X,
+    faCircleParamM2Y,
+    faLineParamA1,
+    faLineParamA2,
+    faLineParamE1,
+    faLineParamE2,
+    faCircleParamM1Z,
+    faCircleParamM2Z,
+    faCirclesReset];
+
+  ActionGroupMemeFormat: TActionGroup = [
+    faMemeGotoLandscape,
+    faMemeGotoSquare,
+    faMemeGotoPortrait,
+    faMemeFormat0,
+    faMemeFormat1,
+    faMemeFormat2,
+    faMemeFormat3,
+    faMemeFormat4,
+    faMemeFormat5,
+    faMemeFormat6,
+    faMemeFormat7,
+    faMemeFormat8,
+    faMemeFormat9];
+
   ActionGroupReset: TActionGroup = [
     faReset,
     faResetPosition,
@@ -881,14 +1638,22 @@ const
     faLoad,
     faOpen,
     faCopy,
-    faPaste];
+    faPaste,
+    faShare];
 
   ActionGroupViewOptions: TActionGroup = [
     faToggleMoveMode,
     faLinearMove,
     faExpoMove,
     faToggleQuickMesh,
-    faToggleOrbitMode];
+    faToggleOrbitMode,
+    faOrbitMode0,
+    faOrbitMode1];
+
+  ActionGroupHullMesh: TActionGroup = [
+    faHullMesh,
+    faHullMeshOn,
+    faHullMeshOff];
 
   ActionGroupBitmapCycle: TActionGroup = [
     faCycleBitmapM,
@@ -901,6 +1666,216 @@ const
     faBitmapEscape,
     faBitmapOne,
     faToggleContour];
+
+  ActionGroupFRTimingGen: TActionGroup = [
+    faTimingGen1,
+    faTimingGen2,
+    faTimingGen3,
+    faTimingGen4,
+    faTimingGen5,
+    faTimingGen6,
+    faTimingGen7,
+    faTimingGen8];
+
+  ActionGroupFRLayoutOptions: TActionGroup = [
+    faToggleToolbar,
+    faToggleEventMenu,
+    faToggleEventTable,
+    faToggleTimingGrid,
+    faToggleRowHeight,
+    faLoadTestData,
+    faShowInfoMemo];
+
+  ActionGroupFREventReportOptions: TActionGroup = [
+    faEventStatusText,
+    faEventSourceText,
+    faEventHashText,
+    faEventInfoText,
+    faEventBoardText];
+
+  ActionGroupFRDashTextSelection: TActionGroup = [
+    faActionDashText,
+    faEntriesDashText,
+    faEventDashText,
+    faMobileDashText,
+    faProfileDashText];
+
+  ActionGroupFRSortOptions: TActionGroup = [
+    faSortAsc,
+    faSortDesc];
+
+  ActionGroupFREventOptions: TActionGroup = [
+    faEventPoints,
+    faEventFinish];
+
+  ActionGroupFRRaceOptions: TActionGroup = [
+    faMobileRaceM,
+    faMobileRaceP,
+    faTimingRaceM,
+    faTimingRaceP,
+    faTimingAutoSend,
+    faTimingSend,
+    faTimingSendRandom,
+    faTimingResetAge,
+    faTimingClearRace];
+
+  ActionGroupFRUrlDisplay: TActionGroup = [
+    faUrlDisplay,
+    faUrlSelect1,
+    faUrlSelect2,
+    faUrlSelect3,
+    faUrlSelect4,
+    faUrlSelect5,
+    faUrlSelect6];
+
+  ActionGroupFRCategoryDisplay: TActionGroup = [
+    faCategoryDisplay,
+    faCategorySelect1,
+    faCategorySelect2,
+    faCategorySelect3,
+    faCategorySelect4,
+    faCategorySelect5,
+    faCategorySelect6];
+
+  ActionGroupFREventDisplay: TActionGroup = [
+    faEventDisplay,
+    faEventBtn1,
+    faEventBtn2,
+    faEventBtn3,
+    faEventBtn4,
+    faEventBtn5,
+    faEventBtn6,
+    faEventBtn7,
+    faEventBtn8,
+    faEventBtn9,
+    faEventBtn10,
+    faEventBtn11,
+    faEventBtn12];
+
+  ActionGroupFREventMenu: TActionGroup = [
+    faEventMenuGet,
+    faEventMenuText,
+    faEventMenuXml,
+    faEventMenuDownload,
+    faEventMenuTransform,
+    faEventMenuConvert,
+    faEventMenuInfo,
+    faEventMenuWrite,
+    faToggleEventMenuVerbose,
+    faEventMenuMore,
+    faEventMenuLess,
+    faToggleEventMenuSkipDownload,
+    faEventMenuSkipDownloadOn,
+    faEventMenuSkipDownloadOff,
+    faToggleEventMenuSkipImport,
+    faEventMenuSkipImportOn,
+    faEventMenuSkipImportOff];
+
+  ActionGroupFRMemoPaging: TActionGroup = [
+    faToggleMemoPaging,
+    faMemoPagingOn,
+    faMemoPagingOff,
+    faMemoPagerM,
+    faMemoPagerP];
+
+  ActionGroupFREditSelection: TActionGroup = [
+    faEdit0,
+    faEdit1,
+    faEdit2,
+    faEdit3,
+    faEdit4,
+    faEdit5,
+    faEdit6,
+    faEdit7,
+    faEdit8,
+    faEdit9,
+    faEditH];
+
+  ActionGroupOutplaceEditCommands: TActionGroup = [
+    faOutplaceEditingStart,
+    faOutplaceEditingOK,
+    faOutplaceEditingCancel];
+
+  ActionGroupTestMemoCommands: TActionGroup = [
+    faWriteTestMemoText,
+    faWriteTestMemoCols,
+    faWriteTestMemoEvent];
+
+  ActionGroupTableText: TActionGroup = [
+    faHeaderClicked,
+    faAlignTableText,
+    faFloatTableText,
+    faFixedTableText];
+
+  ActionGroupCharProcessing: TActionGroup = [
+    faStartCharZ,
+    faStartCharM,
+    faStartCharP,
+    faStartColF,
+    faStartColM,
+    faStartColP,
+    faPageUp,
+    faPageDown,
+    faFirstPage,
+    faLastPage,
+    faNavLeft,
+    faNavRight,
+    faNavUp,
+    faNavDown,
+    faLineUp,
+    faLineDown,
+    faColPos1,
+    faColEnde,
+    faColLeft,
+    faColRight,
+    faColM,
+    faColP];
+
+  ActionGroupMemeBuilder: TActionGroup = [
+    faShowMeme,
+    faDropMeme,
+    faMemeToggleEdits,
+    faMemeReset,
+    faMemeSwapText,
+    faMemeClearImage,
+    faMemeInitChecker,
+    faMemeSelectTop,
+    faMemeSelectBottom,
+    faMemeParamTopGlow,
+    faMemeParamBottomGlow,
+    faMemeParamTopMargin,
+    faMemeParamBottomMargin,
+    faMemeParamTopSize,
+    faMemeParamBottomSize,
+    faMemeToggleDropTarget,
+    faMemeToggleHelp,
+    faMemeToggleReport,
+    faMemeToggleReportOption,
+    faMemeToggleTiling,
+    faMemeToggleFontColor,
+    faMemeToggleTextColor,
+    faMemeFontOffice,
+    faMemeFontNormal,
+    faMemeCycleFontP,
+    faMemeCycleFontM,
+    faMemeCycleDarkColorP,
+    faMemeCycleDarkColorM,
+    faMemeCycleLightColorP,
+    faMemeCycleLightColorM,
+    faMemeAdaptFormSize,
+    faMemeSampleT,
+    faMemeSampleP,
+    faMemeSampleM,
+    faMemeSample00,
+    faMemeSample01,
+    faMemeSample02,
+    faMemePickFont,
+    faMemePickColor,
+    faMemeShowColorPicker,
+    faMemeShowFontPicker,
+    faMemeSaveBitmap,
+    faMemeCopyBitmap,
+    faMemePasteBitmap];
 
   ActionGroupLayout0: TActionGroup = [
     faLayout0,
@@ -1022,6 +1997,23 @@ const
     faLayout98,
     faLayout99];
 
+  ActionGroupScenario: TActionGroup = [
+    faScenario0,
+    faScenario1,
+    faScenario2,
+    faScenario3,
+    faScenario4,
+    faScenario5,
+    faScenario6,
+    faScenario7,
+    faScenario8,
+    faScenario9];
+
+  ActionGroupActionMap: TActionGroup = [
+    faActionMap1,
+    faActionMap2,
+    faToggleActionMap];
+
   ActionGroupMenuNav: TActionGroup = [
     faMenuXX,
     faMenu00,
@@ -1035,48 +2027,117 @@ const
     faMenu80,
     faMenu90];
 
-  ActionGroupFigureSize: TActionGroup = [
-    faFigureSizeXS,
-    faFigureSizeS,
-    faFigureSizeM,
-    faFigureSizeL,
-    faFigureSizeXL];
+  ActionGroupSudokuNavigation: TActionGroup = [
+    faNavColM,
+    faNavColP,
+    faNavRowM,
+    faNavRowP,
+    faNavColFirst,
+    faNavColLast,
+    faNavRowFirst,
+    faNavRowLast];
 
-  ActionGroupEyeSize: TActionGroup = [
-    faEyeSizeS,
-    faEyeSizeM,
-    faEyeSizeL];
+  ActionGroupSudokuSelection: TActionGroup = [
+    faSelect0,
+    faSelect1,
+    faSelect2,
+    faSelect3,
+    faSelect4,
+    faSelect5,
+    faSelect6,
+    faSelect7,
+    faSelect8,
+    faSelect9,
+    faSelect10,
+    faSelect11,
+    faSelect12,
+    faSelect13,
+    faSelect14,
+    faSelect15,
+    faSelect16];
 
-  ActionGroupLayerSelection: TActionGroup = [
-    faSelectLayer1,
-    faSelectLayer2,
-    faSelectLayer3,
-    faSelectLayer4,
-    faSelectLayer5,
-    faSelectLayer6,
-    faSelectLayer7];
+  ActionGroupSudokuPlacing: TActionGroup = [
+    faPlace0,
+    faPlace1,
+    faPlace2,
+    faPlace3,
+    faPlace4,
+    faPlace5,
+    faPlace6,
+    faPlace7,
+    faPlace8,
+    faPlace9,
+    faPlace10,
+    faPlace11,
+    faPlace12,
+    faPlace13,
+    faPlace14,
+    faPlace15,
+    faPlace16];
 
-  ActionGroupColorSelection: TActionGroup = [
-    faSelectColor1,
-    faSelectColor2,
-    faSelectColor3,
-    faSelectColor4];
+  ActionGroupSudokuScene: TActionGroup = [
+    faSudoku09A,
+    faSudoku09B,
+    faSudoku12A,
+    faSudoku12B,
+    faSudoku12C,
+    faSudoku12D,
+    faSudoku16A,
+    faSudoku16B,
+    faSudoku16C,
+    faSudoku16D];
 
-  ActionGroupColorMapping: TActionGroup = [
-    faCLA,
-    faMapColorToLayer,
-    faSelectColorMapping1,
-    faSelectColorMapping2,
-    faSelectColorMapping3,
-    faSelectColorMapping4,
-    faSelectColorMapping5,
-    faSelectColorMapping6];
+  ActionGroupSudokuMode: TActionGroup = [
+    faSetFocusMode,
+    faSetValueMode,
+    faSetCandidateMode,
+    faUnsetCandidateMode,
+    faToggleGosuMode];
+
+  ActionGroupSudokuCommands: TActionGroup = [
+    faToggleGosu,
+    faNewSudoku,
+    faSaveSudoku,
+    faLoadSudoku,
+    faClearStack,
+    faUndo,
+    faSetMark,
+    faRevertToMark];
+
+  ActionGroupLoopLine: TActionGroup = [
+    faToggleRoofLine,
+    faToggleTestLine,
+    faToggleLoopLine,
+    faSetLoopAngle1,
+    faSetLoopAngle2,
+    faSetLoopAngle3,
+    faSetLoopAngle4,
+    faUseLoopLine3,
+    faUseLoopLine4];
 
   ActionGroupDeprecated: TActionGroup = [
+    faWheelFreq100,
+    faWheelFreq010,
+    faWheelFreq001,
     faShowMemoSimple,
     faShowActionGrid,
     faFormatL,
-    faFormatP];
+    faFormatP,
+    faPlusOne,
+    faPlusTen,
+    faWriteLogInfo,
+    faToggleInfoLogging,
+    faToggleOddPulling,
+    faToggleTransitbarLayout,
+    faToggleFav,
+    faBitmapLock,
+    faAngleSwap,
+    faCycleDBM,
+    faCycleDBP,
+    faEquilat,
+    faSortActions,
+    faRollStatusText,
+    faCycleQuarter];
 
 implementation
 

@@ -52,11 +52,26 @@ begin
     fagActionPage6: result := faActionPage6;
 
     { Forms }
+    fagRotaForm1: result := faRotaForm1;
+    fagRotaForm2: result := faRotaForm2;
+    fagRotaForm3: result := faRotaForm3;
     fagShowImage: result := faShowImage;
     fagShowMemo: result := faShowMemo;
     fagShowActions: result := faShowActions;
+    fagShowOptions: result := faShowOptions;
+    fagShowDrawings: result := faShowDrawings;
+    fagShowConfig: result := faShowConfig;
+    fagShowKreis: result := faShowKreis;
     fagShowColor: result := faShowColor;
     fagShowBambu: result := faShowBambu;
+    fagShowSplash: result := faShowSplash;
+    fagShowForce: result := faShowForce;
+    fagShowTabelle: result := faShowTabelle;
+    fagShowDetail: result := faShowDetail;
+    fagShowSaling: result := faShowSaling;
+    fagShowController: result := faShowController;
+    fagShowText: result := faShowText;
+    fagShowTrimmTab: result := faShowTrimmTab;
     fagShowAnim: result := faShowAnim;
     fagEditText: result := faEditText;
     fagEditConn: result := faEditConn;
@@ -64,16 +79,20 @@ begin
     fagEditPort: result := faEditPort;
     fagEditPref: result := faEditPref;
     fagEditStep: result := faEditStep;
+    fagShowData: result := faShowData;
     fagShowRepo: result := faShowRepo;
+    fagShowShad: result := faShowShad;
+    fagShowChart: result := faShowChart;
+    fagShowDiagA: result := faShowDiagA;
+    fagShowDiagC: result := faShowDiagC;
+    fagShowDiagE: result := faShowDiagE;
+    fagShowDiagQ: result := faShowDiagQ;
     fagShowInfo: result := faShowInfo;
 
     { TouchLayout }
     fagTouchTablet: result := faTouchTablet;
     fagTouchPhone: result := faTouchPhone;
     fagTouchDesk: result := faTouchDesk;
-
-    { ActionMapping }
-    fagProcessAll: result := faProcessAll;
 
     { Scene }
     fagScene1: result := faScene1;
@@ -97,6 +116,9 @@ begin
     fagPlot11: result := faPlot11;
     fagPlot12: result := faPlot12;
     fagPlot13: result := faPlot13;
+    fagPlot14: result := faPlot14;
+    fagPlot15: result := faPlot15;
+    fagPlot16: result := faPlot16;
 
     { Figure }
     fagFigure1: result := faFigure1;
@@ -181,6 +203,13 @@ begin
     fagParamL4Y: result := faParamL4Y;
     fagParamL4Z: result := faParamL4Z;
 
+    { ComboCycle }
+    fagCycleComboM: result := faCycleComboM;
+    fagCycleComboP: result := faCycleComboP;
+    fagCycleComboValueM: result := faCycleComboValueM;
+    fagCycleComboValueP: result := faCycleComboValueP;
+    fagCycleComboValue: result := faCycleComboValue;
+
     { ParamCycle }
     fagCycleX: result := faCycleX;
     fagCycleY: result := faCycleY;
@@ -191,6 +220,11 @@ begin
     fagCycleR: result := faCycleR;
     fagCycleT: result := faCycleT;
     fagCycleU: result := faCycleU;
+
+    { FlagCycle }
+    fagCycleFlagM: result := faCycleFlagM;
+    fagCycleFlagP: result := faCycleFlagP;
+    fagToggleFlag: result := faToggleFlag;
 
     { ModelParams }
     fagParamR: result := faParamR;
@@ -206,6 +240,13 @@ begin
     fagParamY3F: result := faParamY3F;
     fagParamL3F: result := faParamL3F;
     fagParamLF: result := faParamLF;
+
+    { ConeSections }
+    fagParamMZ: result := faParamMZ;
+    fagParamKW: result := faParamKW;
+    fagConeModeOn: result := faConeModeOn;
+    fagConeModeOff: result := faConeModeOff;
+    fagToggleConeMode: result := faToggleConeMode;
 
     { ModelOptions }
     fagToggleSolutionMode: result := faToggleSolutionMode;
@@ -259,6 +300,7 @@ begin
     fagBlindRingM: result := faBlindRingM;
     fagCycleRingP: result := faCycleRingP;
     fagCycleRingM: result := faCycleRingM;
+    fagToggleShirtMode: result := faToggleShirtMode;
     fagToggleShirtColor: result := faToggleShirtColor;
     fagShirtColorOn: result := faShirtColorOn;
     fagShirtColorOff: result := faShirtColorOff;
@@ -305,9 +347,36 @@ begin
     fagBandSelection20: result := faBandSelection20;
     fagBandSelection21: result := faBandSelection21;
 
+    { Mesh }
+    fagFederMesh: result := faFederMesh;
+    fagLauranaMesh: result := faLauranaMesh;
+    fagToggleLaurana: result := faToggleLaurana;
+
+    { MeshForm }
+    fagPlotMesh: result := faPlotMesh;
+    fagFlatMesh: result := faFlatMesh;
+    fagDiaMesh: result := faDiaMesh;
+    fagKegelMesh: result := faKegelMesh;
+    fagKugelMesh: result := faKugelMesh;
+    fagEggMesh: result := faEggMesh;
+    fagEliMesh: result := faEliMesh;
+    fagSoapMesh: result := faSoapMesh;
+    fagBackPlaneOn: result := faBackPlaneOn;
+    fagBackPlaneOff: result := faBackPlaneOff;
+    fagToggleBackPlane: result := faToggleBackPlane;
+    fagParamEggX: result := faParamEggX;
+    fagParamEggZ: result := faParamEggZ;
+
     { MeshMode }
+    fagEvenMesh: result := faEvenMesh;
+    fagFilterMesh: result := faFilterMesh;
+    fagFuzzyMesh: result := faFuzzyMesh;
     fagOpenMesh: result := faOpenMesh;
     fagPolarMesh: result := faPolarMesh;
+    fagLinearMesh: result := faLinearMesh;
+    fagToggleSliceInversion: result := faToggleSliceInversion;
+    fagToggleSliceTopOnly: result := faToggleSliceTopOnly;
+    fagToggleSliceBottomOnly: result := faToggleSliceBottomOnly;
     fagReducedMesh: result := faReducedMesh;
     fagReduceMode0: result := faReduceMode0;
     fagReduceMode1: result := faReduceMode1;
@@ -326,27 +395,57 @@ begin
     fagMeshSize512: result := faMeshSize512;
     fagMeshSize1024: result := faMeshSize1024;
 
+    { MeshQuarter }
+    fagUseQuarter0: result := faUseQuarter0;
+    fagUseQuarter1: result := faUseQuarter1;
+    fagUseQuarter2: result := faUseQuarter2;
+    fagUseQuarter3: result := faUseQuarter3;
+    fagUseQuarter4: result := faUseQuarter4;
+
+    { MeshResolution }
+    fagResolution1: result := faResolution1;
+    fagResolution2: result := faResolution2;
+    fagResolution3: result := faResolution3;
+    fagResolution4: result := faResolution4;
+    fagResolution5: result := faResolution5;
+    fagResolution6: result := faResolution6;
+
     { MeshExport }
+    fagToggleBaseCapExport: result := faToggleBaseCapExport;
+    fagToggleSideCapExport: result := faToggleSideCapExport;
+    fagPrepareForMeshExport: result := faPrepareForMeshExport;
+    fagPrepareForSliceExport: result := faPrepareForSliceExport;
+    fagReturnFromExport: result := faReturnFromExport;
+    fagExportAllSlices: result := faExportAllSlices;
+    fagSliceExport01: result := faSliceExport01;
+    fagSliceExport02: result := faSliceExport02;
+    fagCopyPOV: result := faCopyPOV;
+    fagCopyOBJ: result := faCopyOBJ;
+    fagSliceSet00: result := faSliceSet00;
+    fagSliceSet01: result := faSliceSet01;
+    fagSliceSet02: result := faSliceSet02;
+    fagSliceSet03: result := faSliceSet03;
+    fagSliceSet04: result := faSliceSet04;
+    fagTogglePartCaps: result := faTogglePartCaps;
+    fagExportPart: result := faExportPart;
+    fagExportAllParts: result := faExportAllParts;
+    fagExportVase: result := faExportVase;
+    fagExportSolid: result := faExportSolid;
+    fagExportRing: result := faExportRing;
+    fagExportRingGroup: result := faExportRingGroup;
     fagWantBottom: result := faWantBottom;
     fagWantBottomMirrored: result := faWantBottomMirrored;
     fagWantSideCaps: result := faWantSideCaps;
+    fagWantAutoStitch: result := faWantAutoStitch;
     fagTestSingleSide: result := faTestSingleSide;
     fagTakeCapValueSnapshot: result := faTakeCapValueSnapshot;
 
-    { MeshExportCoords }
-    fagExportCoordsNative: result := faExportCoordsNative;
-    fagExportCoordsBlender: result := faExportCoordsBlender;
-    fagExportCoords3DV: result := faExportCoords3DV;
-    fagExportCoords3DP: result := faExportCoords3DP;
-
-    { MeshOptions }
-    fagTextureJitt: result := faTextureJitt;
-    fagTextureJack: result := faTextureJack;
-
     { ExporterOBJ }
+    fagUseExporterOBJ: result := faUseExporterOBJ;
     fagWantAutoFolder: result := faWantAutoFolder;
     fagExportMtl: result := faExportMtl;
     fagExportObj: result := faExportObj;
+    fagExportTxt: result := faExportTxt;
     fagWantMaterial: result := faWantMaterial;
     fagWantSimpleName: result := faWantSimpleName;
     fagWantAngularDir: result := faWantAngularDir;
@@ -356,6 +455,31 @@ begin
     fagObjDigits3: result := faObjDigits3;
     fagObjDigits4: result := faObjDigits4;
     fagObjDigits5: result := faObjDigits5;
+    fagAllParts: result := faAllParts;
+    fagTopOnly: result := faTopOnly;
+    fagBottomOnly: result := faBottomOnly;
+    fagNorthOnly: result := faNorthOnly;
+    fagSouthOnly: result := faSouthOnly;
+
+    { MeshExportCoords }
+    fagExportCoordsNative: result := faExportCoordsNative;
+    fagExportCoordsBlender: result := faExportCoordsBlender;
+    fagExportCoords3DV: result := faExportCoords3DV;
+    fagExportCoords3DP: result := faExportCoords3DP;
+
+    { PathExport }
+    fagExportPath: result := faExportPath;
+    fagExportPathCollection: result := faExportPathCollection;
+    fagExportPathSVG: result := faExportPathSVG;
+    fagExportPathOBJ: result := faExportPathOBJ;
+    fagExportPathDXF: result := faExportPathDXF;
+    fagExportSvg: result := faExportSvg;
+    fagExportDxf: result := faExportDxf;
+    fagExportGrf: result := faExportGrf;
+
+    { CycleMesh }
+    fagCycleMeshM: result := faCycleMeshM;
+    fagCycleMeshP: result := faCycleMeshP;
 
     { MeshFigures }
     fagToggleMarker: result := faToggleMarker;
@@ -369,21 +493,177 @@ begin
     fagToggleCorner: result := faToggleCorner;
     fagToggleLimitPlane: result := faToggleLimitPlane;
 
+    { MeshOptions }
+    fagTextureMidd: result := faTextureMidd;
+    fagTextureVert: result := faTextureVert;
+    fagTextureJitt: result := faTextureJitt;
+    fagTextureJack: result := faTextureJack;
+    fagInvertedMesh: result := faInvertedMesh;
+    fagInvertedMeshOn: result := faInvertedMeshOn;
+    fagInvertedMeshOff: result := faInvertedMeshOff;
+    fagUprightMesh: result := faUprightMesh;
+    fagUprightMeshOn: result := faUprightMeshOn;
+    fagUprightMeshOff: result := faUprightMeshOff;
+    fagFlippedTexture: result := faFlippedTexture;
+    fagFlippedTextureOn: result := faFlippedTextureOn;
+    fagFlippedTextureOff: result := faFlippedTextureOff;
+
     { VertexPulling }
+    fagToggleShortQuads: result := faToggleShortQuads;
+    fagToggleMoreDetail: result := faToggleMoreDetail;
+    fagToggleDetailPulling: result := faToggleDetailPulling;
     fagToggleZeroPulling: result := faToggleZeroPulling;
     fagToggleLimitPulling: result := faToggleLimitPulling;
     fagToggleSlicePulling: result := faToggleSlicePulling;
+    fagToggleSlicePullingTop: result := faToggleSlicePullingTop;
+    fagToggleSlicePullingBottom: result := faToggleSlicePullingBottom;
     fagToggleTargetPulling: result := faToggleTargetPulling;
     fagToggleRightPulling: result := faToggleRightPulling;
     fagToggleCrackFixing: result := faToggleCrackFixing;
 
+    { MeshBuilderObjects }
+    fagHideAll: result := faHideAll;
+    fagToggleStrokeCube: result := faToggleStrokeCube;
+    fagToggleFaceModel: result := faToggleFaceModel;
+    fagToggleFederMesh: result := faToggleFederMesh;
+    fagToggleCornerCube: result := faToggleCornerCube;
+    fagToggleCornerPlane: result := faToggleCornerPlane;
+    fagTogglePlaneMesh: result := faTogglePlaneMesh;
+    fagToggleDiskMesh: result := faToggleDiskMesh;
+    fagToggleKugelMesh: result := faToggleKugelMesh;
+    fagToggleFederBand: result := faToggleFederBand;
+    fagToggleFederShape: result := faToggleFederShape;
+    fagToggleFederShell1: result := faToggleFederShell1;
+    fagToggleFederShell2: result := faToggleFederShell2;
+    fagToggleFederSlice: result := faToggleFederSlice;
+    fagToggleFederSlice2: result := faToggleFederSlice2;
+    fagToggleFederHand: result := faToggleFederHand;
+    fagToggleFederGraph: result := faToggleFederGraph;
+    fagToggleFederRoof: result := faToggleFederRoof;
+    fagToggleFederRing: result := faToggleFederRing;
+    fagToggleFederRingGroup: result := faToggleFederRingGroup;
+    fagToggleShapes: result := faToggleShapes;
+    fagToggleRings: result := faToggleRings;
+
+    { MeshBuilderParts }
+    fagToggleFederLeftStone: result := faToggleFederLeftStone;
+    fagToggleFederRightStone: result := faToggleFederRightStone;
+    fagToggleSlicePart: result := faToggleSlicePart;
+    fagToggleRingPart: result := faToggleRingPart;
+    fagToggleBandPart: result := faToggleBandPart;
+    fagToggleRingBandPart: result := faToggleRingBandPart;
+    fagToggleRingGroupPart: result := faToggleRingGroupPart;
+    fagToggleSliceBandPart: result := faToggleSliceBandPart;
+    fagToggleSolidPart: result := faToggleSolidPart;
+    fagToggleSolidHand: result := faToggleSolidHand;
+    fagToggleShellPart: result := faToggleShellPart;
+    fagToggleVasePart: result := faToggleVasePart;
+
+    { MeshBuilderGroups }
+    fagToggleRingGroups: result := faToggleRingGroups;
+    fagToggleSliceGroups: result := faToggleSliceGroups;
+
     { MeshBuilderOptions }
+    fagToggleTestBorder: result := faToggleTestBorder;
+    fagToggleBorderDrawing: result := faToggleBorderDrawing;
+    fagToggleLeftHand: result := faToggleLeftHand;
+    fagToggleFlippedHand: result := faToggleFlippedHand;
+    fagToggleReduceHands: result := faToggleReduceHands;
+    fagToggleGap: result := faToggleGap;
     fagToggleSolidFlip: result := faToggleSolidFlip;
+    fagToggleWantPolyTrim: result := faToggleWantPolyTrim;
+    fagToggleTextureJack: result := faToggleTextureJack;
+    fagToggleOpenMesh: result := faToggleOpenMesh;
+    fagToggleMeshPosition: result := faToggleMeshPosition;
+    fagSubdivisionHP: result := faSubdivisionHP;
+    fagSubdivisionHM: result := faSubdivisionHM;
+    fagSubdivisionAP: result := faSubdivisionAP;
+    fagSubdivisionAM: result := faSubdivisionAM;
+    fagWantPositionZ: result := faWantPositionZ;
+    fagWantSubdividedRing: result := faWantSubdividedRing;
     fagWantSpecialY: result := faWantSpecialY;
     fagToggleShowEdges: result := faToggleShowEdges;
     fagUniqueMode1: result := faUniqueMode1;
     fagUniqueMode2: result := faUniqueMode2;
+    fagUniqueMode3: result := faUniqueMode3;
+    fagUniqueMode4: result := faUniqueMode4;
     fagToggleUniqueVertices: result := faToggleUniqueVertices;
+
+    { MeshBuilderMaterials }
+    fagToggleOriginalMaterial: result := faToggleOriginalMaterial;
+    fagToggleSelectedMaterial: result := faToggleSelectedMaterial;
+    fagToggleAmbientMaterial: result := faToggleAmbientMaterial;
+    fagToggleColorMaterial: result := faToggleColorMaterial;
+    fagToggleSimpleMaterial: result := faToggleSimpleMaterial;
+    fagToggleFederMaterial: result := faToggleFederMaterial;
+    fagToggleLightMaterial: result := faToggleLightMaterial;
+    fagToggleLightParent: result := faToggleLightParent;
+    fagFixHands: result := faFixHands;
+
+    { HeightLine }
+    fagWantPolyTrim: result := faWantPolyTrim;
+    fagShowPolyPoints: result := faShowPolyPoints;
+    fagShowRodPoly: result := faShowRodPoly;
+    fagShowTwo: result := faShowTwo;
+    fagShowTri: result := faShowTri;
+
+    { MeshLine }
+    fagToggleKeepRuns: result := faToggleKeepRuns;
+    fagToggleGridTest: result := faToggleGridTest;
+    fagTogglePlotArea: result := faTogglePlotArea;
+    fagToggleExpoTest: result := faToggleExpoTest;
+    fagToggleSecoTest: result := faToggleSecoTest;
+    fagToggleLoopTest: result := faToggleLoopTest;
+    fagToggleScanHorz: result := faToggleScanHorz;
+    fagToggleScanVert: result := faToggleScanVert;
+    fagToggleScanBoth: result := faToggleScanBoth;
+    fagToggleAutoCalc: result := faToggleAutoCalc;
+    fagToggleWantLoop: result := faToggleWantLoop;
+
+    { MeshLineOptions }
+    fagToggleLF0: result := faToggleLF0;
+    fagToggleLF1: result := faToggleLF1;
+    fagToggleLF2: result := faToggleLF2;
+    fagToggleLF3: result := faToggleLF3;
+    fagToggleLF4: result := faToggleLF4;
+    fagToggleLF5: result := faToggleLF5;
+    fagToggleLF6: result := faToggleLF6;
+    fagToggleLF7: result := faToggleLF7;
+    fagToggleLF8: result := faToggleLF8;
+    fagToggleLF9: result := faToggleLF9;
+    fagToggleLFA: result := faToggleLFA;
+    fagToggleLFB: result := faToggleLFB;
+    fagToggleLFC: result := faToggleLFC;
+    fagToggleLFD: result := faToggleLFD;
+    fagToggleLFE: result := faToggleLFE;
+    fagToggleLFF: result := faToggleLFF;
+    fagToggleMeshLine: result := faToggleMeshLine;
+    fagShowSingleExpo: result := faShowSingleExpo;
+    fagShowSingleSeco: result := faShowSingleSeco;
+    fagShowFirstCompletion: result := faShowFirstCompletion;
+    fagShowSecondCompletion: result := faShowSecondCompletion;
+
+    { MeshLineParams }
+    fagParamStepCount: result := faParamStepCount;
+    fagParamStepWidthFactor: result := faParamStepWidthFactor;
+    fagParamLoopSectionFactor: result := faParamLoopSectionFactor;
+    fagParamIndexOfFirst: result := faParamIndexOfFirst;
+    fagParamIndexOfSecond: result := faParamIndexOfSecond;
+    fagParamShortPolyMinLength: result := faParamShortPolyMinLength;
+    fagParamLoopDataX: result := faParamLoopDataX;
+    fagParamLoopDataY: result := faParamLoopDataY;
+
+    { SortOrder }
+    fagToggleSortOrder: result := faToggleSortOrder;
+    fagCycleSortOrderP: result := faCycleSortOrderP;
+    fagCycleSortOrderM: result := faCycleSortOrderM;
+    fagSortOrder0: result := faSortOrder0;
+    fagSortOrder1: result := faSortOrder1;
+    fagSortOrder2: result := faSortOrder2;
+
+    { DepthMap }
+    fagInitDepthMap: result := faInitDepthMap;
+    fagCopyDepthMap: result := faCopyDepthMap;
 
     { Pin }
     fagTogglePin: result := faTogglePin;
@@ -405,8 +685,10 @@ begin
     { TextureExport }
     fagCopyBinCode: result := faCopyBinCode;
     fagCopyBinCodeTest: result := faCopyBinCodeTest;
+    fagCopyTextureBitmapText: result := faCopyTextureBitmapText;
 
     { TextureImport }
+    fagSelectTextureBitmap: result := faSelectTextureBitmap;
     fagTextureClear: result := faTextureClear;
 
     { ColorMix }
@@ -421,6 +703,117 @@ begin
 
     { ColorSwat }
     fagToggleColorSwat: result := faToggleColorSwat;
+    fagColorSwatOn: result := faColorSwatOn;
+    fagColorSwatOff: result := faColorSwatOff;
+
+    { ShaderSelection }
+    fagShaderC: result := faShaderC;
+    fagShaderT: result := faShaderT;
+    fagShader1: result := faShader1;
+    fagShader2: result := faShader2;
+    fagShader3: result := faShader3;
+    fagShader4: result := faShader4;
+    fagShader5: result := faShader5;
+
+    { ShaderNormalMode }
+    fagNormalMode0: result := faNormalMode0;
+    fagNormalMode1: result := faNormalMode1;
+    fagNormalMode2: result := faNormalMode2;
+    fagNormalMode3: result := faNormalMode3;
+    fagNormalMode4: result := faNormalMode4;
+    fagNormalMode5: result := faNormalMode5;
+    fagNormalMode6: result := faNormalMode6;
+
+    { ShaderMappedLight }
+    fagMappedLight0: result := faMappedLight0;
+    fagMappedLight1: result := faMappedLight1;
+    fagMappedLight2: result := faMappedLight2;
+    fagMappedLight3: result := faMappedLight3;
+    fagMappedLight4: result := faMappedLight4;
+
+    { ShaderParams1 }
+    fagParamMatEmis: result := faParamMatEmis;
+    fagParamMatAmbi: result := faParamMatAmbi;
+    fagParamMatDiff: result := faParamMatDiff;
+    fagParamMatSpec: result := faParamMatSpec;
+    fagParamMatShin: result := faParamMatShin;
+    fagParamLitCutt: result := faParamLitCutt;
+    fagParamLitExpo: result := faParamLitExpo;
+    fagParamLitDiff: result := faParamLitDiff;
+    fagParamLitSpec: result := faParamLitSpec;
+    fagParamLitColR: result := faParamLitColR;
+    fagParamLitColG: result := faParamLitColG;
+    fagParamLitColB: result := faParamLitColB;
+    fagParamLitPosX: result := faParamLitPosX;
+    fagParamLitPosY: result := faParamLitPosY;
+    fagParamLitPosZ: result := faParamLitPosZ;
+    fagParamLitDirX: result := faParamLitDirX;
+    fagParamLitDirY: result := faParamLitDirY;
+    fagParamLitDirZ: result := faParamLitDirZ;
+    fagParamLitAttX: result := faParamLitAttX;
+    fagParamLitAttY: result := faParamLitAttY;
+    fagParamLitAttZ: result := faParamLitAttZ;
+
+    { ShaderParams2 }
+    fagParamFresnelR0: result := faParamFresnelR0;
+    fagParamSpotPower: result := faParamSpotPower;
+    fagParamRoughness: result := faParamRoughness;
+    fagParamFalloffStart: result := faParamFalloffStart;
+    fagParamFalloffEnd: result := faParamFalloffEnd;
+
+    { ShaderParams3 }
+    fagParamEmisLight: result := faParamEmisLight;
+    fagParamAmbiLight: result := faParamAmbiLight;
+    fagParamDiffLight: result := faParamDiffLight;
+    fagParamSpecLight: result := faParamSpecLight;
+
+    { ShaderParams4 }
+    fagParamLightStrength: result := faParamLightStrength;
+    fagParamSpecPower: result := faParamSpecPower;
+    fagParamOpacity: result := faParamOpacity;
+
+    { ShaderMode }
+    fagShaderMode0: result := faShaderMode0;
+    fagShaderMode1: result := faShaderMode1;
+    fagShaderMode2: result := faShaderMode2;
+    fagShaderMode3: result := faShaderMode3;
+
+    { ShaderMedium }
+    fagMediumWater: result := faMediumWater;
+    fagMediumGlass: result := faMediumGlass;
+    fagMediumPlastic: result := faMediumPlastic;
+    fagMediumGold: result := faMediumGold;
+    fagMediumSilver: result := faMediumSilver;
+    fagMediumCopper: result := faMediumCopper;
+
+    { ShaderOutOptions }
+    fagOutOriginal: result := faOutOriginal;
+    fagOutPos: result := faOutPos;
+    fagOutNor: result := faOutNor;
+    fagOutTex: result := faOutTex;
+    fagOutN: result := faOutN;
+    fagOutL: result := faOutL;
+    fagOutV: result := faOutV;
+    fagOutH: result := faOutH;
+    fagOutNdotL: result := faOutNdotL;
+    fagOutNdotH: result := faOutNdotH;
+    fagOutDiffuse: result := faOutDiffuse;
+    fagOutSpecular: result := faOutSpecular;
+    fagOutEmissive: result := faOutEmissive;
+
+    { ShaderContent }
+    fagWantHand: result := faWantHand;
+    fagContentUseRes: result := faContentUseRes;
+    fagContentLevelS: result := faContentLevelS;
+    fagContentLevelM: result := faContentLevelM;
+    fagContentLevelL: result := faContentLevelL;
+
+    { ShaderExport }
+    fagExportShaderAll: result := faExportShaderAll;
+    fagExportShaderRC: result := faExportShaderRC;
+    fagExportShaderBin: result := faExportShaderBin;
+    fagExportShaderDX: result := faExportShaderDX;
+    fagExportShaderGL: result := faExportShaderGL;
 
     { Lux }
     fagLux1On: result := faLux1On;
@@ -455,6 +848,15 @@ begin
     fagResetLightPosition: result := faResetLightPosition;
     fagResetLightParams: result := faResetLightParams;
 
+    { LightType }
+    fagDirectionalLight: result := faDirectionalLight;
+    fagPositionalLight: result := faPositionalLight;
+    fagSpotLight: result := faSpotLight;
+    fagSimpleLight: result := faSimpleLight;
+
+    { SceneLight }
+    fagWantBackLight: result := faWantBackLight;
+
     { Wheel }
     fagParamValuePlus1: result := faParamValuePlus1;
     fagParamValueMinus1: result := faParamValueMinus1;
@@ -476,6 +878,15 @@ begin
     { ColorScheme }
     fagCycleColorSchemeM: result := faCycleColorSchemeM;
     fagCycleColorSchemeP: result := faCycleColorSchemeP;
+
+    { ColorSchemeFC }
+    fagCycleColorScheme2DP: result := faCycleColorScheme2DP;
+    fagCycleColorScheme2DM: result := faCycleColorScheme2DM;
+    fagCycleJokerColorM: result := faCycleJokerColorM;
+    fagCycleJokerColorP: result := faCycleJokerColorP;
+    fagBlackText: result := faBlackText;
+    fagGrayText: result := faGrayText;
+    fagWhiteText: result := faWhiteText;
 
     { AnimatedRotations }
     fagRotX: result := faRotX;
@@ -512,9 +923,11 @@ begin
     fagToggleColorPanel: result := faToggleColorPanel;
     fagColorPanelOn: result := faColorPanelOn;
     fagColorPanelOff: result := faColorPanelOff;
+    fagShowAppBar: result := faShowAppBar;
     fagShowEditField: result := faShowEditField;
     fagFocusEditField: result := faFocusEditField;
     fagInitSpecial: result := faInitSpecial;
+    fagNewGame: result := faNewGame;
     fagPaletteOn: result := faPaletteOn;
     fagPaletteOff: result := faPaletteOff;
 
@@ -578,6 +991,9 @@ begin
     { ViewFlags }
     fagToggleBMap: result := faToggleBMap;
     fagToggleZoom: result := faToggleZoom;
+    fagToggleMapK: result := faToggleMapK;
+    fagMapKOn: result := faMapKOn;
+    fagMapKOff: result := faMapKOff;
     fagToggleTouchMenu: result := faToggleTouchMenu;
     fagToggleEquationText: result := faToggleEquationText;
     fagTogglePrimeText: result := faTogglePrimeText;
@@ -598,7 +1014,13 @@ begin
     fagResetFrustum: result := faResetFrustum;
     fagEulerSync: result := faEulerSync;
 
+    { GridFlavour }
+    fagGridFlavourEmb: result := faGridFlavourEmb;
+    fagGridFlavourTxt: result := faGridFlavourTxt;
+    fagGridFlavourTee: result := faGridFlavourTee;
+
     { Report }
+    fagCopyHtml: result := faCopyHtml;
     fagCopyMeshDataReport: result := faCopyMeshDataReport;
     fagCopyShortCutReport: result := faCopyShortCutReport;
     fagWriteActionReport: result := faWriteActionReport;
@@ -625,16 +1047,23 @@ begin
 
     { CopyImage }
     fagCopyScreenshot: result := faCopyScreenshot;
+    fagCopyBitmap: result := faCopyBitmap;
+    fagCopyBitmap2D: result := faCopyBitmap2D;
     fagCopyBitmap3D: result := faCopyBitmap3D;
     fagCopyTextureBitmap: result := faCopyTextureBitmap;
     fagCopyImprintedBitmap: result := faCopyImprintedBitmap;
     fagCopyImprintedBitmapTest: result := faCopyImprintedBitmapTest;
+    fagCreateExtenderThumbs: result := faCreateExtenderThumbs;
     fagCopyTiledImage0: result := faCopyTiledImage0;
     fagCopyTiledImage1: result := faCopyTiledImage1;
     fagCopyTiledImage2: result := faCopyTiledImage2;
     fagCopyTiledImage3: result := faCopyTiledImage3;
+    fagCreateThumbs: result := faCreateThumbs;
     fagCreateImage3D: result := faCreateImage3D;
     fagCreateImageSeries3D: result := faCreateImageSeries3D;
+    fagCreateImage2D: result := faCreateImage2D;
+    fagCreateImageSeries2D: result := faCreateImageSeries2D;
+    fagCreateSeries2D: result := faCreateSeries2D;
 
     { CopyOptions }
     fagToggleHardCopy: result := faToggleHardCopy;
@@ -703,11 +1132,15 @@ begin
     fagToggleProbe: result := faToggleProbe;
 
     { Bahn }
+    fagBahnAngle0: result := faBahnAngle0;
+    fagBahnAngle30: result := faBahnAngle30;
+    fagBahnAngle90: result := faBahnAngle90;
     fagNorthCap: result := faNorthCap;
     fagSouthCap: result := faSouthCap;
     fagEastCap: result := faEastCap;
     fagWestCap: result := faWestCap;
     fagParamCapValue: result := faParamCapValue;
+    fagParamSliceHeight: result := faParamSliceHeight;
     fagParamBahnRadius: result := faParamBahnRadius;
     fagParamBahnPositionX: result := faParamBahnPositionX;
     fagParamBahnPositionY: result := faParamBahnPositionY;
@@ -720,6 +1153,33 @@ begin
     fagBitmapDraw: result := faBitmapDraw;
     fagMeshDraw: result := faMeshDraw;
     fagPolygonDraw: result := faPolygonDraw;
+
+    { ModelSync }
+    fagToggleModel: result := faToggleModel;
+    fagToggleModelSync: result := faToggleModelSync;
+    fagModelSyncOn: result := faModelSyncOn;
+    fagModelSyncOff: result := faModelSyncOff;
+    fagToggleViewSync: result := faToggleViewSync;
+    fagViewSyncOn: result := faViewSyncOn;
+    fagViewSyncOff: result := faViewSyncOff;
+
+    { PolyMode }
+    fagPolyColorI: result := faPolyColorI;
+    fagPolyColorZ: result := faPolyColorZ;
+    fagPolySet0: result := faPolySet0;
+    fagPolySet1: result := faPolySet1;
+    fagPolySet2: result := faPolySet2;
+    fagPolySet3: result := faPolySet3;
+    fagPolySet4: result := faPolySet4;
+    fagPolySet5: result := faPolySet5;
+    fagPolySet6: result := faPolySet6;
+    fagPolyModeA: result := faPolyModeA;
+    fagPolyMode1: result := faPolyMode1;
+    fagPolyMode2: result := faPolyMode2;
+    fagPolyMode3: result := faPolyMode3;
+    fagPolyMode4: result := faPolyMode4;
+    fagPolyMode5: result := faPolyMode5;
+    fagPolyMode6: result := faPolyMode6;
 
     { AnimationStore }
     fagRecall1: result := faRecall1;
@@ -785,7 +1245,27 @@ begin
     fagGotoSample0: result := faGotoSample0;
     fagGotoSample1: result := faGotoSample1;
 
+    { EquilateralSample }
+    fagTogglePlot: result := faTogglePlot;
+    fagSetPlotE: result := faSetPlotE;
+    fagSetPlotF: result := faSetPlotF;
+    fagLockPlotE: result := faLockPlotE;
+    fagLockPlotF: result := faLockPlotF;
+    fagGotoEquilateralSampleA0: result := faGotoEquilateralSampleA0;
+    fagGotoEquilateralSampleB1: result := faGotoEquilateralSampleB1;
+    fagGotoEquilateralSampleC2: result := faGotoEquilateralSampleC2;
+    fagGotoEquilateralSampleD3: result := faGotoEquilateralSampleD3;
+    fagGotoEquilateralSampleE4: result := faGotoEquilateralSampleE4;
+    fagGotoEquilateralSampleF5: result := faGotoEquilateralSampleF5;
+    fagGotoEquilateralSampleG6: result := faGotoEquilateralSampleG6;
+    fagGotoEquilateralSampleH7: result := faGotoEquilateralSampleH7;
+    fagGotoEquilateralSampleI8: result := faGotoEquilateralSampleI8;
+    fagGotoEquilateralSampleJ9: result := faGotoEquilateralSampleJ9;
+
     { Display }
+    fagToggleFlipState: result := faToggleFlipState;
+    fagDisplayFlip2D: result := faDisplayFlip2D;
+    fagDisplayFlop3D: result := faDisplayFlop3D;
     fagCycleDisplayM: result := faCycleDisplayM;
     fagCycleDisplayP: result := faCycleDisplayP;
     fagDisplay00: result := faDisplay00;
@@ -797,6 +1277,18 @@ begin
     fagDisplay66: result := faDisplay66;
     fagUpdateContent: result := faUpdateContent;
 
+    { Delay }
+    fagDelay0: result := faDelay0;
+    fagDelay1: result := faDelay1;
+    fagDelay2: result := faDelay2;
+    fagDelay3: result := faDelay3;
+
+    { Idle }
+    fagIdle0: result := faIdle0;
+    fagIdle1: result := faIdle1;
+    fagIdle2: result := faIdle2;
+    fagIdle3: result := faIdle3;
+
     { CreationTest }
     fagSwapDown: result := faSwapDown;
     fagSwapUp: result := faSwapUp;
@@ -804,7 +1296,11 @@ begin
 
     { DebugOptions }
     fagTestBtnClick: result := faTestBtnClick;
+    fagDoSingleStep: result := faDoSingleStep;
+    fagReportLiveObjects: result := faReportLiveObjects;
     fagRunBinPixelTest: result := faRunBinPixelTest;
+    fagRunInitDataAgain: result := faRunInitDataAgain;
+    fagFindBorder: result := faFindBorder;
 
     { EmptyLastLine }
     fagELLOn: result := faELLOn;
@@ -819,6 +1315,234 @@ begin
     fagHelpCycle: result := faHelpCycle;
     fagHelpList: result := faHelpList;
     fagHelpHome: result := faHelpHome;
+
+    { FigureSize }
+    fagFigureSizeXS: result := faFigureSizeXS;
+    fagFigureSizeS: result := faFigureSizeS;
+    fagFigureSizeM: result := faFigureSizeM;
+    fagFigureSizeL: result := faFigureSizeL;
+    fagFigureSizeXL: result := faFigureSizeXL;
+
+    { EyeSize }
+    fagEyeSizeS: result := faEyeSizeS;
+    fagEyeSizeM: result := faEyeSizeM;
+    fagEyeSizeL: result := faEyeSizeL;
+
+    { LayerSelection }
+    fagSelectLayer1: result := faSelectLayer1;
+    fagSelectLayer2: result := faSelectLayer2;
+    fagSelectLayer3: result := faSelectLayer3;
+    fagSelectLayer4: result := faSelectLayer4;
+    fagSelectLayer5: result := faSelectLayer5;
+    fagSelectLayer6: result := faSelectLayer6;
+    fagSelectLayer7: result := faSelectLayer7;
+
+    { ColorSelection }
+    fagSelectColor1: result := faSelectColor1;
+    fagSelectColor2: result := faSelectColor2;
+    fagSelectColor3: result := faSelectColor3;
+    fagSelectColor4: result := faSelectColor4;
+
+    { ColorMapping }
+    fagCLA: result := faCLA;
+    fagMapColorToLayer: result := faMapColorToLayer;
+    fagSelectColorMapping1: result := faSelectColorMapping1;
+    fagSelectColorMapping2: result := faSelectColorMapping2;
+    fagSelectColorMapping3: result := faSelectColorMapping3;
+    fagSelectColorMapping4: result := faSelectColorMapping4;
+    fagSelectColorMapping5: result := faSelectColorMapping5;
+    fagSelectColorMapping6: result := faSelectColorMapping6;
+
+    { ActionMapping }
+    fagProcessAll: result := faProcessAll;
+
+    { RggControls }
+    fagController: result := faController;
+    fagWinkel: result := faWinkel;
+    fagVorstag: result := faVorstag;
+    fagWante: result := faWante;
+    fagWoben: result := faWoben;
+    fagSalingH: result := faSalingH;
+    fagSalingA: result := faSalingA;
+    fagSalingL: result := faSalingL;
+    fagSalingW: result := faSalingW;
+    fagMastfallF0C: result := faMastfallF0C;
+    fagMastfallF0F: result := faMastfallF0F;
+    fagMastfallVorlauf: result := faMastfallVorlauf;
+    fagBiegung: result := faBiegung;
+    fagMastfussD0X: result := faMastfussD0X;
+    fagVorstagOS: result := faVorstagOS;
+    fagWPowerOS: result := faWPowerOS;
+    fagParamAPW: result := faParamAPW;
+    fagParamEAH: result := faParamEAH;
+    fagParamEAR: result := faParamEAR;
+    fagParamEI: result := faParamEI;
+
+    { RggFixPoints }
+    fagFixpointA0: result := faFixpointA0;
+    fagFixpointA: result := faFixpointA;
+    fagFixpointB0: result := faFixpointB0;
+    fagFixpointB: result := faFixpointB;
+    fagFixpointC0: result := faFixpointC0;
+    fagFixpointC: result := faFixpointC;
+    fagFixpointD0: result := faFixpointD0;
+    fagFixpointD: result := faFixpointD;
+    fagFixpointE0: result := faFixpointE0;
+    fagFixpointE: result := faFixpointE;
+    fagFixpointF0: result := faFixpointF0;
+    fagFixpointF: result := faFixpointF;
+
+    { RggViewPoint }
+    fagViewpointS: result := faViewpointS;
+    fagViewpointA: result := faViewpointA;
+    fagViewpointT: result := faViewpointT;
+    fagViewpoint3: result := faViewpoint3;
+
+    { RggSalingType }
+    fagSalingTypOhne: result := faSalingTypOhne;
+    fagSalingTypDrehbar: result := faSalingTypDrehbar;
+    fagSalingTypFest: result := faSalingTypFest;
+    fagSalingTypOhneStarr: result := faSalingTypOhneStarr;
+
+    { RggCalcType }
+    fagCalcTypQuer: result := faCalcTypQuer;
+    fagCalcTypKnick: result := faCalcTypKnick;
+    fagCalcTypGemessen: result := faCalcTypGemessen;
+
+    { RggAppMode }
+    fagDemo: result := faDemo;
+    fagMemoryBtn: result := faMemoryBtn;
+    fagMemoryRecallBtn: result := faMemoryRecallBtn;
+    fagKorrigiertItem: result := faKorrigiertItem;
+    fagSofortBtn: result := faSofortBtn;
+    fagGrauBtn: result := faGrauBtn;
+    fagBlauBtn: result := faBlauBtn;
+    fagMultiBtn: result := faMultiBtn;
+
+    { RggSuper }
+    fagSuperSimple: result := faSuperSimple;
+    fagSuperNormal: result := faSuperNormal;
+    fagSuperGrau: result := faSuperGrau;
+    fagSuperBlau: result := faSuperBlau;
+    fagSuperMulti: result := faSuperMulti;
+    fagSuperDisplay: result := faSuperDisplay;
+    fagSuperQuick: result := faSuperQuick;
+
+    { RggReport }
+    fagReportNone: result := faReportNone;
+    fagReportLog: result := faReportLog;
+    fagReportJson: result := faReportJson;
+    fagReportData: result := faReportData;
+    fagReportShort: result := faReportShort;
+    fagReportLong: result := faReportLong;
+    fagReportTrimmText: result := faReportTrimmText;
+    fagReportJsonText: result := faReportJsonText;
+    fagReportDataText: result := faReportDataText;
+    fagReportDiffText: result := faReportDiffText;
+    fagReportAusgabeDetail: result := faReportAusgabeDetail;
+    fagReportAusgabeRL: result := faReportAusgabeRL;
+    fagReportAusgabeRP: result := faReportAusgabeRP;
+    fagReportAusgabeRLE: result := faReportAusgabeRLE;
+    fagReportAusgabeRPE: result := faReportAusgabeRPE;
+    fagReportAusgabeDiffL: result := faReportAusgabeDiffL;
+    fagReportAusgabeDiffP: result := faReportAusgabeDiffP;
+    fagReportXML: result := faReportXML;
+    fagReportDebugReport: result := faReportDebugReport;
+    fagReportReadme: result := faReportReadme;
+
+    { RggChart }
+    fagChartRect: result := faChartRect;
+    fagChartTextRect: result := faChartTextRect;
+    fagChartLegend: result := faChartLegend;
+    fagChartAP: result := faChartAP;
+    fagChartBP: result := faChartBP;
+    fagChartGroup: result := faChartGroup;
+    fagParamCountPlus: result := faParamCountPlus;
+    fagParamCountMinus: result := faParamCountMinus;
+    fagPComboPlus: result := faPComboPlus;
+    fagPComboMinus: result := faPComboMinus;
+    fagXComboPlus: result := faXComboPlus;
+    fagXComboMinus: result := faXComboMinus;
+    fagYComboPlus: result := faYComboPlus;
+    fagYComboMinus: result := faYComboMinus;
+    fagChartReset: result := faChartReset;
+
+    { RggGraph }
+    fagToggleLineColor: result := faToggleLineColor;
+    fagToggleUseDisplayList: result := faToggleUseDisplayList;
+    fagToggleUseQuickSort: result := faToggleUseQuickSort;
+    fagToggleShowLegend: result := faToggleShowLegend;
+    fagToggleSortedRota: result := faToggleSortedRota;
+    fagRggBogen: result := faRggBogen;
+    fagRggKoppel: result := faRggKoppel;
+    fagRggHull: result := faRggHull;
+    fagRggZoomIn: result := faRggZoomIn;
+    fagRggZoomOut: result := faRggZoomOut;
+    fagToggleSalingGraph: result := faToggleSalingGraph;
+    fagToggleControllerGraph: result := faToggleControllerGraph;
+    fagToggleChartGraph: result := faToggleChartGraph;
+    fagToggleKraftGraph: result := faToggleKraftGraph;
+    fagToggleMatrixText: result := faToggleMatrixText;
+
+    { RggSegment }
+    fagToggleSegmentF: result := faToggleSegmentF;
+    fagToggleSegmentR: result := faToggleSegmentR;
+    fagToggleSegmentS: result := faToggleSegmentS;
+    fagToggleSegmentM: result := faToggleSegmentM;
+    fagToggleSegmentV: result := faToggleSegmentV;
+    fagToggleSegmentW: result := faToggleSegmentW;
+    fagToggleSegmentC: result := faToggleSegmentC;
+    fagToggleSegmentA: result := faToggleSegmentA;
+
+    { RggRenderOptions }
+    fagWantRenderH: result := faWantRenderH;
+    fagWantRenderP: result := faWantRenderP;
+    fagWantRenderF: result := faWantRenderF;
+    fagWantRenderE: result := faWantRenderE;
+    fagWantRenderS: result := faWantRenderS;
+
+    { RggTrimms }
+    fagTrimm0: result := faTrimm0;
+    fagTrimm1: result := faTrimm1;
+    fagTrimm2: result := faTrimm2;
+    fagTrimm3: result := faTrimm3;
+    fagTrimm4: result := faTrimm4;
+    fagTrimm5: result := faTrimm5;
+    fagTrimm6: result := faTrimm6;
+    fag420: result := fa420;
+    fagLogo: result := faLogo;
+
+    { RggTrimmFile }
+    fagCopyTrimmItem: result := faCopyTrimmItem;
+    fagPasteTrimmItem: result := faPasteTrimmItem;
+    fagCopyAndPaste: result := faCopyAndPaste;
+    fagUpdateTrimm0: result := faUpdateTrimm0;
+    fagReadTrimmFile: result := faReadTrimmFile;
+    fagSaveTrimmFile: result := faSaveTrimmFile;
+    fagCopyTrimmFile: result := faCopyTrimmFile;
+
+    { RggTrimmText }
+    fagToggleTrimmText: result := faToggleTrimmText;
+    fagToggleDiffText: result := faToggleDiffText;
+    fagToggleDataText: result := faToggleDataText;
+    fagToggleDebugText: result := faToggleDebugText;
+    fagUpdateReportText: result := faUpdateReportText;
+
+    { RggSonstiges }
+    fagToggleDarkMode: result := faToggleDarkMode;
+    fagToggleButtonSize: result := faToggleButtonSize;
+    fagToggleSandboxed: result := faToggleSandboxed;
+    fagToggleSpeedPanel: result := faToggleSpeedPanel;
+    fagToggleAllProps: result := faToggleAllProps;
+    fagToggleAllTags: result := faToggleAllTags;
+
+    { RggInfo }
+    fagShowHelpText: result := faShowHelpText;
+    fagShowInfoText: result := faShowInfoText;
+    fagShowNormalKeyInfo: result := faShowNormalKeyInfo;
+    fagShowSpecialKeyInfo: result := faShowSpecialKeyInfo;
+    fagShowDebugInfo: result := faShowDebugInfo;
+    fagShowZOrderInfo: result := faShowZOrderInfo;
 
     { BtnLegendTablet }
     fagTL01: result := faTL01;
@@ -866,6 +1590,39 @@ begin
     fagTouchBarLeft: result := faTouchBarLeft;
     fagTouchBarRight: result := faTouchBarRight;
 
+    { Circles }
+    fagCirclesSelectC0: result := faCirclesSelectC0;
+    fagCirclesSelectC1: result := faCirclesSelectC1;
+    fagCirclesSelectC2: result := faCirclesSelectC2;
+    fagCircleParamR1: result := faCircleParamR1;
+    fagCircleParamR2: result := faCircleParamR2;
+    fagCircleParamM1X: result := faCircleParamM1X;
+    fagCircleParamM1Y: result := faCircleParamM1Y;
+    fagCircleParamM2X: result := faCircleParamM2X;
+    fagCircleParamM2Y: result := faCircleParamM2Y;
+    fagLineParamA1: result := faLineParamA1;
+    fagLineParamA2: result := faLineParamA2;
+    fagLineParamE1: result := faLineParamE1;
+    fagLineParamE2: result := faLineParamE2;
+    fagCircleParamM1Z: result := faCircleParamM1Z;
+    fagCircleParamM2Z: result := faCircleParamM2Z;
+    fagCirclesReset: result := faCirclesReset;
+
+    { MemeFormat }
+    fagMemeGotoLandscape: result := faMemeGotoLandscape;
+    fagMemeGotoSquare: result := faMemeGotoSquare;
+    fagMemeGotoPortrait: result := faMemeGotoPortrait;
+    fagMemeFormat0: result := faMemeFormat0;
+    fagMemeFormat1: result := faMemeFormat1;
+    fagMemeFormat2: result := faMemeFormat2;
+    fagMemeFormat3: result := faMemeFormat3;
+    fagMemeFormat4: result := faMemeFormat4;
+    fagMemeFormat5: result := faMemeFormat5;
+    fagMemeFormat6: result := faMemeFormat6;
+    fagMemeFormat7: result := faMemeFormat7;
+    fagMemeFormat8: result := faMemeFormat8;
+    fagMemeFormat9: result := faMemeFormat9;
+
     { Reset }
     fagReset: result := faReset;
     fagResetPosition: result := faResetPosition;
@@ -889,6 +1646,7 @@ begin
     fagOpen: result := faOpen;
     fagCopy: result := faCopy;
     fagPaste: result := faPaste;
+    fagShare: result := faShare;
 
     { ViewOptions }
     fagToggleMoveMode: result := faToggleMoveMode;
@@ -896,6 +1654,13 @@ begin
     fagExpoMove: result := faExpoMove;
     fagToggleQuickMesh: result := faToggleQuickMesh;
     fagToggleOrbitMode: result := faToggleOrbitMode;
+    fagOrbitMode0: result := faOrbitMode0;
+    fagOrbitMode1: result := faOrbitMode1;
+
+    { HullMesh }
+    fagHullMesh: result := faHullMesh;
+    fagHullMeshOn: result := faHullMeshOn;
+    fagHullMeshOff: result := faHullMeshOff;
 
     { BitmapCycle }
     fagCycleBitmapM: result := faCycleBitmapM;
@@ -908,6 +1673,216 @@ begin
     fagBitmapEscape: result := faBitmapEscape;
     fagBitmapOne: result := faBitmapOne;
     fagToggleContour: result := faToggleContour;
+
+    { FRTimingGen }
+    fagTimingGen1: result := faTimingGen1;
+    fagTimingGen2: result := faTimingGen2;
+    fagTimingGen3: result := faTimingGen3;
+    fagTimingGen4: result := faTimingGen4;
+    fagTimingGen5: result := faTimingGen5;
+    fagTimingGen6: result := faTimingGen6;
+    fagTimingGen7: result := faTimingGen7;
+    fagTimingGen8: result := faTimingGen8;
+
+    { FRLayoutOptions }
+    fagToggleToolbar: result := faToggleToolbar;
+    fagToggleEventMenu: result := faToggleEventMenu;
+    fagToggleEventTable: result := faToggleEventTable;
+    fagToggleTimingGrid: result := faToggleTimingGrid;
+    fagToggleRowHeight: result := faToggleRowHeight;
+    fagLoadTestData: result := faLoadTestData;
+    fagShowInfoMemo: result := faShowInfoMemo;
+
+    { FREventReportOptions }
+    fagEventStatusText: result := faEventStatusText;
+    fagEventSourceText: result := faEventSourceText;
+    fagEventHashText: result := faEventHashText;
+    fagEventInfoText: result := faEventInfoText;
+    fagEventBoardText: result := faEventBoardText;
+
+    { FRDashTextSelection }
+    fagActionDashText: result := faActionDashText;
+    fagEntriesDashText: result := faEntriesDashText;
+    fagEventDashText: result := faEventDashText;
+    fagMobileDashText: result := faMobileDashText;
+    fagProfileDashText: result := faProfileDashText;
+
+    { FRSortOptions }
+    fagSortAsc: result := faSortAsc;
+    fagSortDesc: result := faSortDesc;
+
+    { FREventOptions }
+    fagEventPoints: result := faEventPoints;
+    fagEventFinish: result := faEventFinish;
+
+    { FRRaceOptions }
+    fagMobileRaceM: result := faMobileRaceM;
+    fagMobileRaceP: result := faMobileRaceP;
+    fagTimingRaceM: result := faTimingRaceM;
+    fagTimingRaceP: result := faTimingRaceP;
+    fagTimingAutoSend: result := faTimingAutoSend;
+    fagTimingSend: result := faTimingSend;
+    fagTimingSendRandom: result := faTimingSendRandom;
+    fagTimingResetAge: result := faTimingResetAge;
+    fagTimingClearRace: result := faTimingClearRace;
+
+    { FRUrlDisplay }
+    fagUrlDisplay: result := faUrlDisplay;
+    fagUrlSelect1: result := faUrlSelect1;
+    fagUrlSelect2: result := faUrlSelect2;
+    fagUrlSelect3: result := faUrlSelect3;
+    fagUrlSelect4: result := faUrlSelect4;
+    fagUrlSelect5: result := faUrlSelect5;
+    fagUrlSelect6: result := faUrlSelect6;
+
+    { FRCategoryDisplay }
+    fagCategoryDisplay: result := faCategoryDisplay;
+    fagCategorySelect1: result := faCategorySelect1;
+    fagCategorySelect2: result := faCategorySelect2;
+    fagCategorySelect3: result := faCategorySelect3;
+    fagCategorySelect4: result := faCategorySelect4;
+    fagCategorySelect5: result := faCategorySelect5;
+    fagCategorySelect6: result := faCategorySelect6;
+
+    { FREventDisplay }
+    fagEventDisplay: result := faEventDisplay;
+    fagEventBtn1: result := faEventBtn1;
+    fagEventBtn2: result := faEventBtn2;
+    fagEventBtn3: result := faEventBtn3;
+    fagEventBtn4: result := faEventBtn4;
+    fagEventBtn5: result := faEventBtn5;
+    fagEventBtn6: result := faEventBtn6;
+    fagEventBtn7: result := faEventBtn7;
+    fagEventBtn8: result := faEventBtn8;
+    fagEventBtn9: result := faEventBtn9;
+    fagEventBtn10: result := faEventBtn10;
+    fagEventBtn11: result := faEventBtn11;
+    fagEventBtn12: result := faEventBtn12;
+
+    { FREventMenu }
+    fagEventMenuGet: result := faEventMenuGet;
+    fagEventMenuText: result := faEventMenuText;
+    fagEventMenuXml: result := faEventMenuXml;
+    fagEventMenuDownload: result := faEventMenuDownload;
+    fagEventMenuTransform: result := faEventMenuTransform;
+    fagEventMenuConvert: result := faEventMenuConvert;
+    fagEventMenuInfo: result := faEventMenuInfo;
+    fagEventMenuWrite: result := faEventMenuWrite;
+    fagToggleEventMenuVerbose: result := faToggleEventMenuVerbose;
+    fagEventMenuMore: result := faEventMenuMore;
+    fagEventMenuLess: result := faEventMenuLess;
+    fagToggleEventMenuSkipDownload: result := faToggleEventMenuSkipDownload;
+    fagEventMenuSkipDownloadOn: result := faEventMenuSkipDownloadOn;
+    fagEventMenuSkipDownloadOff: result := faEventMenuSkipDownloadOff;
+    fagToggleEventMenuSkipImport: result := faToggleEventMenuSkipImport;
+    fagEventMenuSkipImportOn: result := faEventMenuSkipImportOn;
+    fagEventMenuSkipImportOff: result := faEventMenuSkipImportOff;
+
+    { FRMemoPaging }
+    fagToggleMemoPaging: result := faToggleMemoPaging;
+    fagMemoPagingOn: result := faMemoPagingOn;
+    fagMemoPagingOff: result := faMemoPagingOff;
+    fagMemoPagerM: result := faMemoPagerM;
+    fagMemoPagerP: result := faMemoPagerP;
+
+    { FREditSelection }
+    fagEdit0: result := faEdit0;
+    fagEdit1: result := faEdit1;
+    fagEdit2: result := faEdit2;
+    fagEdit3: result := faEdit3;
+    fagEdit4: result := faEdit4;
+    fagEdit5: result := faEdit5;
+    fagEdit6: result := faEdit6;
+    fagEdit7: result := faEdit7;
+    fagEdit8: result := faEdit8;
+    fagEdit9: result := faEdit9;
+    fagEditH: result := faEditH;
+
+    { OutplaceEditCommands }
+    fagOutplaceEditingStart: result := faOutplaceEditingStart;
+    fagOutplaceEditingOK: result := faOutplaceEditingOK;
+    fagOutplaceEditingCancel: result := faOutplaceEditingCancel;
+
+    { TestMemoCommands }
+    fagWriteTestMemoText: result := faWriteTestMemoText;
+    fagWriteTestMemoCols: result := faWriteTestMemoCols;
+    fagWriteTestMemoEvent: result := faWriteTestMemoEvent;
+
+    { TableText }
+    fagHeaderClicked: result := faHeaderClicked;
+    fagAlignTableText: result := faAlignTableText;
+    fagFloatTableText: result := faFloatTableText;
+    fagFixedTableText: result := faFixedTableText;
+
+    { CharProcessing }
+    fagStartCharZ: result := faStartCharZ;
+    fagStartCharM: result := faStartCharM;
+    fagStartCharP: result := faStartCharP;
+    fagStartColF: result := faStartColF;
+    fagStartColM: result := faStartColM;
+    fagStartColP: result := faStartColP;
+    fagPageUp: result := faPageUp;
+    fagPageDown: result := faPageDown;
+    fagFirstPage: result := faFirstPage;
+    fagLastPage: result := faLastPage;
+    fagNavLeft: result := faNavLeft;
+    fagNavRight: result := faNavRight;
+    fagNavUp: result := faNavUp;
+    fagNavDown: result := faNavDown;
+    fagLineUp: result := faLineUp;
+    fagLineDown: result := faLineDown;
+    fagColPos1: result := faColPos1;
+    fagColEnde: result := faColEnde;
+    fagColLeft: result := faColLeft;
+    fagColRight: result := faColRight;
+    fagColM: result := faColM;
+    fagColP: result := faColP;
+
+    { MemeBuilder }
+    fagShowMeme: result := faShowMeme;
+    fagDropMeme: result := faDropMeme;
+    fagMemeToggleEdits: result := faMemeToggleEdits;
+    fagMemeReset: result := faMemeReset;
+    fagMemeSwapText: result := faMemeSwapText;
+    fagMemeClearImage: result := faMemeClearImage;
+    fagMemeInitChecker: result := faMemeInitChecker;
+    fagMemeSelectTop: result := faMemeSelectTop;
+    fagMemeSelectBottom: result := faMemeSelectBottom;
+    fagMemeParamTopGlow: result := faMemeParamTopGlow;
+    fagMemeParamBottomGlow: result := faMemeParamBottomGlow;
+    fagMemeParamTopMargin: result := faMemeParamTopMargin;
+    fagMemeParamBottomMargin: result := faMemeParamBottomMargin;
+    fagMemeParamTopSize: result := faMemeParamTopSize;
+    fagMemeParamBottomSize: result := faMemeParamBottomSize;
+    fagMemeToggleDropTarget: result := faMemeToggleDropTarget;
+    fagMemeToggleHelp: result := faMemeToggleHelp;
+    fagMemeToggleReport: result := faMemeToggleReport;
+    fagMemeToggleReportOption: result := faMemeToggleReportOption;
+    fagMemeToggleTiling: result := faMemeToggleTiling;
+    fagMemeToggleFontColor: result := faMemeToggleFontColor;
+    fagMemeToggleTextColor: result := faMemeToggleTextColor;
+    fagMemeFontOffice: result := faMemeFontOffice;
+    fagMemeFontNormal: result := faMemeFontNormal;
+    fagMemeCycleFontP: result := faMemeCycleFontP;
+    fagMemeCycleFontM: result := faMemeCycleFontM;
+    fagMemeCycleDarkColorP: result := faMemeCycleDarkColorP;
+    fagMemeCycleDarkColorM: result := faMemeCycleDarkColorM;
+    fagMemeCycleLightColorP: result := faMemeCycleLightColorP;
+    fagMemeCycleLightColorM: result := faMemeCycleLightColorM;
+    fagMemeAdaptFormSize: result := faMemeAdaptFormSize;
+    fagMemeSampleT: result := faMemeSampleT;
+    fagMemeSampleP: result := faMemeSampleP;
+    fagMemeSampleM: result := faMemeSampleM;
+    fagMemeSample00: result := faMemeSample00;
+    fagMemeSample01: result := faMemeSample01;
+    fagMemeSample02: result := faMemeSample02;
+    fagMemePickFont: result := faMemePickFont;
+    fagMemePickColor: result := faMemePickColor;
+    fagMemeShowColorPicker: result := faMemeShowColorPicker;
+    fagMemeShowFontPicker: result := faMemeShowFontPicker;
+    fagMemeSaveBitmap: result := faMemeSaveBitmap;
+    fagMemeCopyBitmap: result := faMemeCopyBitmap;
+    fagMemePasteBitmap: result := faMemePasteBitmap;
 
     { Layout0 }
     fagLayout0: result := faLayout0;
@@ -1029,6 +2004,23 @@ begin
     fagLayout98: result := faLayout98;
     fagLayout99: result := faLayout99;
 
+    { Scenario }
+    fagScenario0: result := faScenario0;
+    fagScenario1: result := faScenario1;
+    fagScenario2: result := faScenario2;
+    fagScenario3: result := faScenario3;
+    fagScenario4: result := faScenario4;
+    fagScenario5: result := faScenario5;
+    fagScenario6: result := faScenario6;
+    fagScenario7: result := faScenario7;
+    fagScenario8: result := faScenario8;
+    fagScenario9: result := faScenario9;
+
+    { ActionMap }
+    fagActionMap1: result := faActionMap1;
+    fagActionMap2: result := faActionMap2;
+    fagToggleActionMap: result := faToggleActionMap;
+
     { MenuNav }
     fagMenuXX: result := faMenuXX;
     fagMenu00: result := faMenu00;
@@ -1042,48 +2034,117 @@ begin
     fagMenu80: result := faMenu80;
     fagMenu90: result := faMenu90;
 
-    { FigureSize }
-    fagFigureSizeXS: result := faFigureSizeXS;
-    fagFigureSizeS: result := faFigureSizeS;
-    fagFigureSizeM: result := faFigureSizeM;
-    fagFigureSizeL: result := faFigureSizeL;
-    fagFigureSizeXL: result := faFigureSizeXL;
+    { SudokuNavigation }
+    fagNavColM: result := faNavColM;
+    fagNavColP: result := faNavColP;
+    fagNavRowM: result := faNavRowM;
+    fagNavRowP: result := faNavRowP;
+    fagNavColFirst: result := faNavColFirst;
+    fagNavColLast: result := faNavColLast;
+    fagNavRowFirst: result := faNavRowFirst;
+    fagNavRowLast: result := faNavRowLast;
 
-    { EyeSize }
-    fagEyeSizeS: result := faEyeSizeS;
-    fagEyeSizeM: result := faEyeSizeM;
-    fagEyeSizeL: result := faEyeSizeL;
+    { SudokuSelection }
+    fagSelect0: result := faSelect0;
+    fagSelect1: result := faSelect1;
+    fagSelect2: result := faSelect2;
+    fagSelect3: result := faSelect3;
+    fagSelect4: result := faSelect4;
+    fagSelect5: result := faSelect5;
+    fagSelect6: result := faSelect6;
+    fagSelect7: result := faSelect7;
+    fagSelect8: result := faSelect8;
+    fagSelect9: result := faSelect9;
+    fagSelect10: result := faSelect10;
+    fagSelect11: result := faSelect11;
+    fagSelect12: result := faSelect12;
+    fagSelect13: result := faSelect13;
+    fagSelect14: result := faSelect14;
+    fagSelect15: result := faSelect15;
+    fagSelect16: result := faSelect16;
 
-    { LayerSelection }
-    fagSelectLayer1: result := faSelectLayer1;
-    fagSelectLayer2: result := faSelectLayer2;
-    fagSelectLayer3: result := faSelectLayer3;
-    fagSelectLayer4: result := faSelectLayer4;
-    fagSelectLayer5: result := faSelectLayer5;
-    fagSelectLayer6: result := faSelectLayer6;
-    fagSelectLayer7: result := faSelectLayer7;
+    { SudokuPlacing }
+    fagPlace0: result := faPlace0;
+    fagPlace1: result := faPlace1;
+    fagPlace2: result := faPlace2;
+    fagPlace3: result := faPlace3;
+    fagPlace4: result := faPlace4;
+    fagPlace5: result := faPlace5;
+    fagPlace6: result := faPlace6;
+    fagPlace7: result := faPlace7;
+    fagPlace8: result := faPlace8;
+    fagPlace9: result := faPlace9;
+    fagPlace10: result := faPlace10;
+    fagPlace11: result := faPlace11;
+    fagPlace12: result := faPlace12;
+    fagPlace13: result := faPlace13;
+    fagPlace14: result := faPlace14;
+    fagPlace15: result := faPlace15;
+    fagPlace16: result := faPlace16;
 
-    { ColorSelection }
-    fagSelectColor1: result := faSelectColor1;
-    fagSelectColor2: result := faSelectColor2;
-    fagSelectColor3: result := faSelectColor3;
-    fagSelectColor4: result := faSelectColor4;
+    { SudokuScene }
+    fagSudoku09A: result := faSudoku09A;
+    fagSudoku09B: result := faSudoku09B;
+    fagSudoku12A: result := faSudoku12A;
+    fagSudoku12B: result := faSudoku12B;
+    fagSudoku12C: result := faSudoku12C;
+    fagSudoku12D: result := faSudoku12D;
+    fagSudoku16A: result := faSudoku16A;
+    fagSudoku16B: result := faSudoku16B;
+    fagSudoku16C: result := faSudoku16C;
+    fagSudoku16D: result := faSudoku16D;
 
-    { ColorMapping }
-    fagCLA: result := faCLA;
-    fagMapColorToLayer: result := faMapColorToLayer;
-    fagSelectColorMapping1: result := faSelectColorMapping1;
-    fagSelectColorMapping2: result := faSelectColorMapping2;
-    fagSelectColorMapping3: result := faSelectColorMapping3;
-    fagSelectColorMapping4: result := faSelectColorMapping4;
-    fagSelectColorMapping5: result := faSelectColorMapping5;
-    fagSelectColorMapping6: result := faSelectColorMapping6;
+    { SudokuMode }
+    fagSetFocusMode: result := faSetFocusMode;
+    fagSetValueMode: result := faSetValueMode;
+    fagSetCandidateMode: result := faSetCandidateMode;
+    fagUnsetCandidateMode: result := faUnsetCandidateMode;
+    fagToggleGosuMode: result := faToggleGosuMode;
+
+    { SudokuCommands }
+    fagToggleGosu: result := faToggleGosu;
+    fagNewSudoku: result := faNewSudoku;
+    fagSaveSudoku: result := faSaveSudoku;
+    fagLoadSudoku: result := faLoadSudoku;
+    fagClearStack: result := faClearStack;
+    fagUndo: result := faUndo;
+    fagSetMark: result := faSetMark;
+    fagRevertToMark: result := faRevertToMark;
+
+    { LoopLine }
+    fagToggleRoofLine: result := faToggleRoofLine;
+    fagToggleTestLine: result := faToggleTestLine;
+    fagToggleLoopLine: result := faToggleLoopLine;
+    fagSetLoopAngle1: result := faSetLoopAngle1;
+    fagSetLoopAngle2: result := faSetLoopAngle2;
+    fagSetLoopAngle3: result := faSetLoopAngle3;
+    fagSetLoopAngle4: result := faSetLoopAngle4;
+    fagUseLoopLine3: result := faUseLoopLine3;
+    fagUseLoopLine4: result := faUseLoopLine4;
 
     { Deprecated }
+    fagWheelFreq100: result := faWheelFreq100;
+    fagWheelFreq010: result := faWheelFreq010;
+    fagWheelFreq001: result := faWheelFreq001;
     fagShowMemoSimple: result := faShowMemoSimple;
     fagShowActionGrid: result := faShowActionGrid;
     fagFormatL: result := faFormatL;
     fagFormatP: result := faFormatP;
+    fagPlusOne: result := faPlusOne;
+    fagPlusTen: result := faPlusTen;
+    fagWriteLogInfo: result := faWriteLogInfo;
+    fagToggleInfoLogging: result := faToggleInfoLogging;
+    fagToggleOddPulling: result := faToggleOddPulling;
+    fagToggleTransitbarLayout: result := faToggleTransitbarLayout;
+    fagToggleFav: result := faToggleFav;
+    fagBitmapLock: result := faBitmapLock;
+    fagAngleSwap: result := faAngleSwap;
+    fagCycleDBM: result := faCycleDBM;
+    fagCycleDBP: result := faCycleDBP;
+    fagEquilat: result := faEquilat;
+    fagSortActions: result := faSortActions;
+    fagRollStatusText: result := faRollStatusText;
+    fagCycleQuarter: result := faCycleQuarter;
   end;
 end;
 

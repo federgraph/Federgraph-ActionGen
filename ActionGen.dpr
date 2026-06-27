@@ -17,6 +17,7 @@ uses
   RiggVar.FB.ActionEncode in 'FB\RiggVar.FB.ActionEncode.pas',
   RiggVar.FB.ActionItem in 'FB\RiggVar.FB.ActionItem.pas',
   RiggVar.FB.ActionDecode in 'FB\RiggVar.FB.ActionDecode.pas',
+  RiggVar.FB.ActionRealms in 'FB\RiggVar.FB.ActionRealms.pas',
   RiggVar.FB.ActionKeys in 'FB\RiggVar.FB.ActionKeys.pas',
   RiggVar.FB.Action in 'FB\RiggVar.FB.Action.pas',
   RiggVar.FB.ActionGen in 'FB\RiggVar.FB.ActionGen.pas',

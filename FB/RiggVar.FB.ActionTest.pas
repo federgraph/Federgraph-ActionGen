@@ -259,6 +259,7 @@ begin
   TestLongCaptions;
   TestShortCaptions;
 //  TestUniqueShortCaptions; // across global namespace
+  Main.ShortCaptionManager.TestAll(SL); // within app realm
   TestGroupUsage;
   if TestEncodedValues then
     TestDecodedValues;

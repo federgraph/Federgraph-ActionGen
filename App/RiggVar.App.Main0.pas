@@ -23,6 +23,7 @@ uses
   RiggVar.FB.Action,
   RiggVar.FB.ActionConst,
   RiggVar.FB.ActionGroups,
+  RiggVar.FB.ActionRealms,
   RiggVar.FB.ActionTest,
   RiggVar.FB.ActionItem,
   RiggVar.FB.ActionKeys,
@@ -41,6 +42,7 @@ type
     ActionGroupList: TActionGroupList;
     ActionTest: TActionTest;
     ActionItem: TActionItem;
+    ShortCaptionManager: TShortCaptionManager;
 
     FL: TStringList;
 
@@ -75,10 +77,12 @@ begin
   ActionItem := TActionItem.Create(faNoop);
 
   ActionGen := TActionGen.Create;
+  ShortCaptionManager := TShortCaptionManager.Create;
 end;
 
 destructor TMain0.Destroy;
 begin
+  ShortCaptionManager.Free;
   ActionGen.Free;
   ActionHandler.Free;
   ActionGroupList.Free;

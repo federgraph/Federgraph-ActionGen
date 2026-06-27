@@ -97,8 +97,11 @@ begin
   AddSpecial(ActionGroupOffsetParam, 'OffsetParam');
   AddSpecial(ActionGroupCoordParam, 'CoordParam');
   AddSpecial(ActionGroupLuxParam, 'LuxParam');
+  AddSpecial(ActionGroupComboCycle, 'ComboCycle');
   AddSpecial(ActionGroupParamCycle, 'ParamCycle');
+  AddSpecial(ActionGroupFlagCycle, 'FlagCycle');
   AddSpecial(ActionGroupModelParams, 'ModelParams');
+  AddSpecial(ActionGroupConeSections, 'ConeSections');
 
   { Model }
   AddSpecial(ActionGroupModelOptions, 'ModelOptions');
@@ -115,15 +118,31 @@ begin
   AddSpecial(ActionGroupBandSelection, 'BandSelection');
 
   { Mesh }
+  AddSpecial(ActionGroupMesh, 'Mesh');
+  AddSpecial(ActionGroupMeshForm, 'MeshForm');
   AddSpecial(ActionGroupMeshMode, 'MeshMode');
   AddSpecial(ActionGroupMeshSize, 'MeshSize');
+  AddSpecial(ActionGroupMeshQuarter, 'MeshQuarter');
+  AddSpecial(ActionGroupMeshResolution, 'MeshResolution');
   AddSpecial(ActionGroupMeshExport, 'MeshExport');
   AddSpecial(ActionGroupMeshExportCoords, 'MeshExportCoords');
+  AddSpecial(ActionGroupPathExport, 'PathExport');
+  AddSpecial(ActionGroupCycleMesh, 'CycleMesh');
   AddSpecial(ActionGroupMeshOptions, 'MeshOptions');
   AddSpecial(ActionGroupExporterOBJ, 'ExporterOBJ');
   AddSpecial(ActionGroupMeshFigures, 'MeshFigures');
   AddSpecial(ActionGroupVertexPulling, 'VertexPulling');
+  AddSpecial(ActionGroupMeshBuilderObjects, 'MeshBuilderObjects');
+  AddSpecial(ActionGroupMeshBuilderParts, 'MeshBuilderParts');
+  AddSpecial(ActionGroupMeshBuilderGroups, 'MeshBuilderGroups');
   AddSpecial(ActionGroupMeshBuilderOptions, 'MeshBuilderOptions');
+  AddSpecial(ActionGroupMeshBuilderMaterials, 'MeshBuilderMaterials');
+  AddSpecial(ActionGroupHeightLine, 'HeightLine');
+  AddSpecial(ActionGroupMeshLine, 'MeshLine');
+  AddSpecial(ActionGroupMeshLineOptions, 'MeshLineOptions');
+  AddSpecial(ActionGroupMeshLineParams, 'MeshLineParams');
+  AddSpecial(ActionGroupSortOrder, 'SortOrder');
+  AddSpecial(ActionGroupDepthMap, 'DepthMap');
   AddSpecial(ActionGroupPin, 'Pin');
 
   { Texture }
@@ -134,16 +153,33 @@ begin
   AddSpecial(ActionGroupColorMix, 'ColorMix');
   AddSpecial(ActionGroupColorSwat, 'ColorSwat');
 
+  { Shader }
+  AddSpecial(ActionGroupShaderSelection, 'ShaderSelection');
+  AddSpecial(ActionGroupShaderNormalMode, 'ShaderNormalMode');
+  AddSpecial(ActionGroupShaderMappedLight, 'ShaderMappedLight');
+  AddSpecial(ActionGroupShaderParams1, 'ShaderParams1');
+  AddSpecial(ActionGroupShaderParams2, 'ShaderParams2');
+  AddSpecial(ActionGroupShaderParams3, 'ShaderParams3');
+  AddSpecial(ActionGroupShaderParams4, 'ShaderParams4');
+  AddSpecial(ActionGroupShaderMode, 'ShaderMode');
+  AddSpecial(ActionGroupShaderMedium, 'ShaderMedium');
+  AddSpecial(ActionGroupShaderOutOptions, 'ShaderOutOptions');
+  AddSpecial(ActionGroupShaderContent, 'ShaderContent');
+  AddSpecial(ActionGroupShaderExport, 'ShaderExport');
+
   { Light }
   AddSpecial(ActionGroupLux, 'Lux');
   AddSpecial(ActionGroupLuxMarker, 'LuxMarker');
   AddSpecial(ActionGroupLightMode, 'LightMode');
   AddSpecial(ActionGroupResetLight, 'ResetLight');
+  AddSpecial(ActionGroupLightType, 'LightType');
+  AddSpecial(ActionGroupSceneLight, 'SceneLight');
 
   { UI }
   AddSpecial(ActionGroupWheel, 'Wheel');
   AddSpecial(ActionGroupWheelFrequency, 'WheelFrequency');
   AddSpecial(ActionGroupColorScheme, 'ColorScheme');
+  AddSpecial(ActionGroupColorSchemeFC, 'ColorSchemeFC');
   AddSpecial(ActionGroupAnimatedRotations, 'AnimatedRotations');
   AddSpecial(ActionGroupStep, 'Step');
   AddSpecial(ActionGroupKeyboard, 'Keyboard');
@@ -161,6 +197,9 @@ begin
   AddSpecial(ActionGroupViewportSize, 'ViewportSize');
   AddSpecial(ActionGroupViewTypeOptions, 'ViewTypeOptions');
 
+  { Form }
+  AddSpecial(ActionGroupGridFlavour, 'GridFlavour');
+
   { Report }
   AddSpecial(ActionGroupReport, 'Report');
   AddSpecial(ActionGroupReportOptions, 'ReportOptions');
@@ -177,6 +216,8 @@ begin
   { 2D }
   AddSpecial(ActionGroupGraphOptions, 'GraphOptions');
   AddSpecial(ActionGroupBahn, 'Bahn');
+  AddSpecial(ActionGroupModelSync, 'ModelSync');
+  AddSpecial(ActionGroupPolyMode, 'PolyMode');
 
   { Animation }
   AddSpecial(ActionGroupAnimationStore, 'AnimationStore');
@@ -191,19 +232,43 @@ begin
   AddSpecial(ActionGroupDB, 'DB');
   AddSpecial(ActionGroupRepo, 'Repo');
   AddSpecial(ActionGroupSampleNavigation, 'SampleNavigation');
+  AddSpecial(ActionGroupEquilateralSample, 'EquilateralSample');
 
   { App }
   AddSpecial(ActionGroupDisplay, 'Display');
+  AddSpecial(ActionGroupDelay, 'Delay');
+  AddSpecial(ActionGroupIdle, 'Idle');
   AddSpecial(ActionGroupCreationTest, 'CreationTest');
   AddSpecial(ActionGroupDebugOptions, 'DebugOptions');
   AddSpecial(ActionGroupEmptyLastLine, 'EmptyLastLine');
   AddSpecial(ActionGroupHelp, 'Help');
+
+  { RG }
+  AddSpecial(ActionGroupRggControls, 'RggControls');
+  AddSpecial(ActionGroupRggFixPoints, 'RggFixPoints');
+  AddSpecial(ActionGroupRggViewPoint, 'RggViewPoint');
+  AddSpecial(ActionGroupRggSalingType, 'RggSalingType');
+  AddSpecial(ActionGroupRggCalcType, 'RggCalcType');
+  AddSpecial(ActionGroupRggAppMode, 'RggAppMode');
+  AddSpecial(ActionGroupRggSuper, 'RggSuper');
+  AddSpecial(ActionGroupRggReport, 'RggReport');
+  AddSpecial(ActionGroupRggChart, 'RggChart');
+  AddSpecial(ActionGroupRggGraph, 'RggGraph');
+  AddSpecial(ActionGroupRggSegment, 'RggSegment');
+  AddSpecial(ActionGroupRggRenderOptions, 'RggRenderOptions');
+  AddSpecial(ActionGroupRggTrimms, 'RggTrimms');
+  AddSpecial(ActionGroupRggTrimmFile, 'RggTrimmFile');
+  AddSpecial(ActionGroupRggTrimmText, 'RggTrimmText');
+  AddSpecial(ActionGroupRggSonstiges, 'RggSonstiges');
+  AddSpecial(ActionGroupRggInfo, 'RggInfo');
 
   { TouchFrame Buttons }
   AddSpecial(ActionGroupBtnLegendTablet, 'BtnLegendTablet');
   AddSpecial(ActionGroupBtnLegendPhone, 'BtnLegendPhone');
   AddSpecial(ActionGroupTouchBarLegend, 'TouchBarLegend');
 
+  AddSpecial(ActionGroupCircles, 'Circles');
+  AddSpecial(ActionGroupMemeFormat, 'MemeFormat');
   AddSpecial(ActionGroupReset, 'Reset');
   AddSpecial(ActionGroupViewType, 'ViewType');
   AddSpecial(ActionGroupDropTarget, 'DropTarget');
@@ -211,7 +276,32 @@ begin
   AddSpecial(ActionGroupCopyPaste, 'CopyPaste');
 
   AddSpecial(ActionGroupViewOptions, 'ViewOptions');
+  AddSpecial(ActionGroupHullMesh, 'HullMesh');
   AddSpecial(ActionGroupBitmapCycle, 'BitmapCycle');
+
+  { FR }
+  AddSpecial(ActionGroupFRTimingGen, 'FRTimingGen');
+  AddSpecial(ActionGroupFRLayoutOptions, 'FRLayoutOptions');
+  AddSpecial(ActionGroupFREventReportOptions, 'FREventReportOptions');
+  AddSpecial(ActionGroupFRDashTextSelection, 'FRDashTextSelection');
+  AddSpecial(ActionGroupFRSortOptions, 'FRSortOptions');
+  AddSpecial(ActionGroupFREventOptions, 'FREventOptions');
+  AddSpecial(ActionGroupFRRaceOptions, 'FRRaceOptions');
+  AddSpecial(ActionGroupFRUrlDisplay, 'FRUrlDisplay');
+
+  AddSpecial(ActionGroupFRCategoryDisplay, 'FRCategoryDisplay');
+  AddSpecial(ActionGroupFREventDisplay, 'FREventDisplay');
+  AddSpecial(ActionGroupFREventMenu, 'FREventMenu');
+  AddSpecial(ActionGroupFRMemoPaging, 'FRMemoPaging');
+  AddSpecial(ActionGroupFREditSelection, 'FREditSelection');
+
+  AddSpecial(ActionGroupOutplaceEditCommands, 'OutplaceEditCommands');
+  AddSpecial(ActionGroupTestMemoCommands, 'TestMemoCommands');
+  AddSpecial(ActionGroupTableText, 'TableText');
+  AddSpecial(ActionGroupCharProcessing, 'CharProcessing');
+
+  { MB }
+  AddSpecial(ActionGroupMemeBuilder, 'MemeBuilder');
 
   { Layout }
   AddSpecial(ActionGroupLayout0, 'Layout0');
@@ -224,8 +314,10 @@ begin
   AddSpecial(ActionGroupLayout7, 'Layout7');
   AddSpecial(ActionGroupLayout8, 'Layout8');
   AddSpecial(ActionGroupLayout9, 'Layout9');
+  AddSpecial(ActionGroupScenario, 'Scenario');
 
   { Nav }
+  AddSpecial(ActionGroupActionMap, 'ActionMap');
   AddSpecial(ActionGroupMenuNav, 'MenuNav');
 
   { Bambu }
@@ -234,6 +326,17 @@ begin
   AddSpecial(ActionGroupLayerSelection, 'LayerSelection');
   AddSpecial(ActionGroupColorSelection, 'ColorSelection');
   AddSpecial(ActionGroupColorMapping, 'ColorMapping');
+
+  { Sudoku }
+  AddSpecial(ActionGroupSudokuNavigation, 'SudokuNavigation');
+  AddSpecial(ActionGroupSudokuSelection, 'SudokuSelection');
+  AddSpecial(ActionGroupSudokuPlacing, 'SudokuPlacing');
+  AddSpecial(ActionGroupSudokuScene, 'SudokuScene');
+  AddSpecial(ActionGroupSudokuMode, 'SudokuMode');
+  AddSpecial(ActionGroupSudokuCommands, 'SudokuCommands');
+
+  {Debug}
+  AddSpecial(ActionGroupLoopLine, 'LoopLine');
 
   { Deprecated }
   AddSpecial(ActionGroupDeprecated, 'Deprecated');
