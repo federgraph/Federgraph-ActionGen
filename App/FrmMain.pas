@@ -376,10 +376,10 @@ var
   ML: TStrings;
 begin
   ML := Memo.Lines;
-  ML.Add('leftmost edit field must contains name of folder');
+  ML.Add('Leftmost edit field must contain the name of the folder');
   ML.Add('  where the subfolders, for the delphi projects, live.');
   ML.Add('');
-  ML.Add('Second form left edit field must contain a subfolder');
+  ML.Add('Second from left edit field must contain a subfolder');
   ML.Add('  which is the folder for the project to update.');
   ML.Add('You are expected to edit (complete) that folder name.');
   ML.Add('');
@@ -389,7 +389,7 @@ begin
   ML.Add('  Otherwise you need to fix RiggVar.FB.ActionName.pas for the project.');
   ML.Add('');
   ML.Add('Then click Gen button.');
-  ML.Add('  It will generate a the RiggVar.FB.Action*.pas files.');
+  ML.Add('  It will generate all the RiggVar.FB.Action*.pas files.');
   ML.Add('');
 end;
 

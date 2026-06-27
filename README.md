@@ -10,7 +10,7 @@ ActionGen has the brutto of all the action definitions for these projects. It is
 
 The most obvious use case is when you want to remove a feature.
 In the example below I want to remove a feature from FC91K.
-The work is done in a copy of 
+The work is done in FC91L, a copy of FC91K.
 
 The folder structure of the use case example is as follows:
 
