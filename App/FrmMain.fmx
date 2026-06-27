@@ -1,0 +1,69 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 417
+  ClientWidth = 959
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object MemoBtn: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 0
+    Text = 'MemoBtn'
+    TextSettings.Trimming = None
+  end
+  object Memo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 273.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 413.000000000000000000
+    Viewport.Height = 269.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 232.000000000000000000
+    Position.Y = 16.000000000000000000
+  end
+  object CheckBoxWantGroups: TCheckBox
+    IsChecked = True
+    Position.X = 568.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 9
+    Text = 'Want Groups'
+  end
+  object QueryBtn: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 10
+    Text = 'QueryBtn'
+    TextSettings.Trimming = None
+  end
+  object GenBtn: TButton
+    Position.X = 432.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 11
+    Text = 'GenBtn'
+    TextSettings.Trimming = None
+  end
+end
