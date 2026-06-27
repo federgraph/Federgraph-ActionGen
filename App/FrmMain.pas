@@ -147,6 +147,12 @@ begin
 
   dn := TAppUtils.GetProjectDir;
   dn := StringReplace(dn, t, '', [rfReplaceAll, rfIgnoreCase]);
+
+  { repository name at 'Github is Federgraph-ActionGen }
+  t := 'Federgraph-'; // if not changed from Repository-Name to 'ActionGen'
+  if dn.EndsWith(t) then
+    dn := StringReplace(dn, t, '', [rfReplaceAll, rfIgnoreCase]);
+
   dn := ExcludeTrailingPathDelimiter(dn);
 
   if DirectoryExists(dn) then
